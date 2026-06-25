@@ -3,355 +3,545 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VORTEX | Next-Gen Performance & Innovation</title>
+    <title>VORTEX ELIXIR | Pure Quantum Energy & Focus</title>
     
-    <!-- External Frameworks & Fonts -->
+    <!-- Premium Frameworks & Luxurious Typography -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;900&family=Plus+Jakarta+Sans:wght@300;400;500;700;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
         :root {
-            --bg-dark: #020617;
-            --blue-primary: #3b82f6;
-            --blue-electric: #06b6d4;
-            --blue-deep: #1e3a8a;
+            --bg-deep: #01040d;
+            --liquid-blue: #00d2ff;
+            --electric-sapphire: #0066ff;
+            --neon-glow: rgba(0, 210, 255, 0.4);
         }
 
         body {
-            background-color: var(--bg-dark);
+            background-color: var(--bg-deep);
             font-family: 'Plus Jakarta Sans', sans-serif;
             overflow-x: hidden;
         }
 
-        .heading-font {
-            font-family: 'Space Grotesk', sans-serif;
+        .font-luxury { font-family: 'Cinzel', serif; }
+        .font-tech { font-family: 'Space Grotesk', sans-serif; }
+
+        /* Premium Smooth Scrollbar */
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #01040d; }
+        ::-webkit-scrollbar-thumb { background: linear-gradient(#0066ff, #00d2ff); border-radius: 999px; }
+
+        /* Liquid Wave Motion Background Effects */
+        .liquid-bg {
+            position: absolute;
+            width: 200%; height: 200%;
+            top: -50%; left: -50%;
+            background: radial-gradient(circle at 30% 30%, rgba(0, 102, 255, 0.1), transparent 40%),
+                        radial-gradient(circle at 70% 60%, rgba(0, 210, 255, 0.08), transparent 45%);
+            animation: waveMotion 25s linear infinite;
+            z-index: 1;
         }
 
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #020617; }
-        ::-webkit-scrollbar-thumb { background: #1e40af; border-radius: 999px; }
-        ::-webkit-scrollbar-thumb:hover { background: #3b82f6; }
-
-        /* Neon Glowing Text & Components */
-        .glow-text-cyan {
-            text-shadow: 0 0 20px rgba(6, 182, 212, 0.6);
-        }
-        .glow-text-blue {
-            text-shadow: 0 0 20px rgba(59, 130, 246, 0.6);
-        }
-        .glow-border {
-            box-shadow: 0 0 15px rgba(6, 182, 212, 0.15);
-            border: 1px solid rgba(6, 182, 212, 0.2);
-        }
-        .glow-border:hover {
-            box-shadow: 0 0 25px rgba(59, 130, 246, 0.3);
-            border-color: rgba(59, 130, 246, 0.6);
+        @keyframes waveMotion {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
 
-        /* Background Animated Particles Grid */
-        .grid-bg {
-            background-image: linear-gradient(rgba(6, 182, 212, 0.05) 1px, transparent 1px),
-                              linear-gradient(90deg, rgba(6, 182, 212, 0.05) 1px, transparent 1px);
-            background-size: 50px 50px;
+        /* Glassmorphic Cards Core */
+        .glass-premium {
+            background: linear-gradient(135deg, rgba(2, 8, 26, 0.7) 0%, rgba(1, 4, 15, 0.9) 100%);
+            border: 1px solid rgba(0, 210, 255, 0.15);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-premium:hover {
+            border-color: rgba(0, 210, 255, 0.5);
+            box-shadow: 0 30px 60px rgba(0, 210, 255, 0.15);
+            transform: translateY(-5px);
         }
 
-        /* Floating Animation Keyframes */
-        @keyframes floatingObject {
-            0% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-15px) rotate(2deg); }
-            100% { transform: translateY(0px) rotate(0deg); }
-        }
-        .animate-float {
-            animation: floatingObject 6s ease-in-out infinite;
-        }
-
-        @keyframes pulseGlow {
-            0% { opacity: 0.3; transform: scale(1); }
-            50% { opacity: 0.6; transform: scale(1.05); }
-            100% { opacity: 0.3; transform: scale(1); }
-        }
-        .bg-pulse-orb {
-            animation: pulseGlow 8s ease-in-out infinite;
-        }
-
-        /* Hyper-animated CTA Button Styling */
-        .bridge-btn {
+        /* Animated Interactive Spinning Product Capsule */
+        .bottle-container {
             position: relative;
+            width: 260px; height: 500px;
+            background: linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(0,210,255,0.2) 50%, rgba(0,102,255,0.4) 100%);
+            border: 2px solid rgba(255, 255, 255, 0.25);
+            border-radius: 60px 60px 40px 40px;
+            box-shadow: 0 0 40px rgba(0, 210, 255, 0.3), inset 0 0 30px rgba(255,255,255,0.2);
             overflow: hidden;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            animation: floatBottle 6s ease-in-out infinite;
         }
-        .bridge-btn::before {
+
+        .bottle-cap {
+            position: absolute;
+            top: 0; left: 50%;
+            transform: translateX(-50%);
+            width: 100px; height: 40px;
+            background: linear-gradient(90deg, #1e293b, #475569, #1e293b);
+            border-bottom: 2px solid rgba(255,255,255,0.4);
+            border-radius: 12px 12px 4px 4px;
+            z-index: 5;
+        }
+
+        .bottle-liquid {
+            position: absolute;
+            bottom: 0; left: 0; width: 100%; height: 75%;
+            background: linear-gradient(180deg, #00d2ff, #0066ff, #050b1a);
+            opacity: 0.85;
+            overflow: hidden;
+        }
+
+        .bottle-liquid::after {
             content: '';
             position: absolute;
-            top: 0; left: -100%;
-            width: 100%; hieght: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-            transition: all 0.6s ease;
+            top: -20px; left: -50%; width: 200%; height: 40px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 45%;
+            animation: liquidWave 3s linear infinite;
         }
-        .bridge-btn:hover::before {
-            left: 100%;
+
+        @keyframes liquidWave {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
-        .bridge-btn:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 30px rgba(6, 182, 212, 0.6);
+
+        @keyframes floatBottle {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(1.5deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
         }
+
+        /* Hyper-Glow CTA Buttons */
+        .cta-hyper {
+            position: relative;
+            background: linear-gradient(90deg, #0066ff, #00d2ff, #0066ff);
+            background-size: 200% auto;
+            color: #01040d;
+            font-weight: 800;
+            letter-spacing: 2px;
+            transition: all 0.4s ease;
+            box-shadow: 0 0 25px rgba(0, 210, 255, 0.4);
+            overflow: hidden;
+        }
+        .cta-hyper::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%; width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            transition: 0.5s;
+        }
+        .cta-hyper:hover::before { left: 100%; }
+        .cta-hyper:hover {
+            background-position: right center;
+            box-shadow: 0 0 40px rgba(0, 210, 255, 0.7);
+            transform: scale(1.03);
+        }
+
+        /* Floating Dynamic Bubble Particles */
+        .bubble {
+            position: absolute;
+            background: rgba(0, 210, 255, 0.25);
+            border-radius: 50%;
+            bottom: -50px;
+            animation: riseBubble 12s infinite linear;
+            pointer-events: none;
+        }
+
+        @keyframes riseBubble {
+            0% { transform: translateY(0) scale(0.5); opacity: 0; }
+            50% { opacity: 0.6; }
+            100% { transform: translateY(-110vh) scale(1.3); opacity: 0; }
+        }
+
+        /* Infinite Ticker Loop Animation */
+        @keyframes ticker {
+            0% { transform: translate3d(0, 0, 0); }
+            100% { transform: translate3d(-50%, 0, 0); }
+        }
+        .ticker-wrap { animation: ticker 25s linear infinite; }
     </style>
 </head>
-<body class="text-slate-100 selection:bg-cyan-500 selection:text-slate-950 grid-bg">
+<body class="text-slate-200 antialiased selection:bg-cyan-400 selection:text-slate-900 relative overflow-x-hidden">
 
-    <!-- BACKGROUND GLOW ORBS -->
-    <div class="absolute top-20 left-10 w-96 h-96 bg-cyan-600/10 rounded-full blur-3xl bg-pulse-orb pointer-events-none"></div>
-    <div class="absolute top-[1200px] right-10 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-3xl bg-pulse-orb pointer-events-none" style="animation-delay: 2s;"></div>
-    <div class="absolute bottom-40 left-20 w-80 h-80 bg-indigo-600/10 rounded-full blur-3xl bg-pulse-orb pointer-events-none" style="animation-delay: 4s;"></div>
+    <!-- IDEA 16: GLOBAL LIVE ALERTS INFOBAR TICKER -->
+    <div class="w-full bg-gradient-to-r from-blue-950 via-cyan-950 to-blue-950 border-b border-cyan-500/20 py-2 overflow-hidden sticky top-0 z-55 text-[10px] tracking-widest font-mono text-cyan-400 font-bold">
+        <div class="flex whitespace-nowrap ticker-wrap gap-8">
+            <span>⚡ SYSTEM UPDATE: BATCH #044 NOW COMPILING FOR GLOBAL DISTRIBUTION DIRECT DESPATCH</span>
+            <span>⚡ SECURE CHECKOUT SERVERS ONLINE &amp; ROUTED PROTECTED VIA ENCRYPTION MATRIX SHIELDS</span>
+            <span>⚡ SYSTEM UPDATE: BATCH #044 NOW COMPILING FOR GLOBAL DISTRIBUTION DIRECT DESPATCH</span>
+        </div>
+    </div>
 
-    <!-- FIXED MULTI-LANGUAGE HEADER NAVIGATION -->
-    <header class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-900 px-6 py-4 flex justify-between items-center transition-all duration-300">
-        <a href="#" class="heading-font text-2xl font-black tracking-widest text-white flex items-center gap-2">
-            <span class="bg-gradient-to-r from-blue-500 to-cyan-400 w-8 h-8 rounded-lg flex items-center justify-center shadow-lg"><i class="fa-solid fa-bolt text-sm text-slate-950"></i></span>
-            VOR<span class="text-cyan-400 glow-text-cyan font-light">TEX</span>
+    <!-- MASTER LIQUID BACKGROUND ANIMATION LAYER -->
+    <div class="liquid-bg"></div>
+    <div id="bubble-container" class="fixed inset-0 pointer-events-none z-10"></div>
+
+    <!-- DYNAMIC TRANSPARENT BLUR GLASS NAVBAR -->
+    <header class="sticky top-[37px] z-50 bg-slate-950/40 backdrop-blur-xl border-b border-white/5 px-8 py-5 flex justify-between items-center">
+        <a href="#" class="font-tech text-2xl font-black tracking-[0.25em] text-white flex items-center gap-3">
+            <span class="w-3 h-3 bg-cyan-400 rounded-full animate-ping"></span>VORTEX<span class="text-cyan-400 font-light">ELIXIR</span>
         </a>
 
-        <!-- Desktop Navigation Targets -->
-        <nav class="hidden md:flex items-center gap-8 text-xs font-semibold tracking-widest text-slate-400">
-            <a href="#overview" data-translate="nav-overview" class="hover:text-cyan-400 transition">OVERVIEW</a>
-            <a href="#features" data-translate="nav-features" class="hover:text-cyan-400 transition">FEATURES</a>
-            <a href="#showcase" data-translate="nav-gallery" class="hover:text-cyan-400 transition">SHOWCASE</a>
-            <a href="#contact" data-translate="nav-contact" class="hover:text-cyan-400 transition">CONNECT</a>
+        <!-- Menu Navigation Bar Links -->
+        <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-widest text-slate-400 font-tech">
+            <a href="#formula" data-translate="nav-formula" class="hover:text-cyan-400 transition">THE FORMULA</a>
+            <a href="#workflow" data-translate="nav-steps" class="hover:text-cyan-400 transition">PROTOCOLS</a>
+            <a href="#comparisons" data-translate="nav-matrix" class="hover:text-cyan-400 transition">MATRIX</a>
+            <a href="#narrative" data-translate="nav-story" class="hover:text-cyan-400 transition">MANIFESTO</a>
+            <a href="#faq" data-translate="nav-faq" class="hover:text-cyan-400 transition">FAQ</a>
+            <a href="#inquiry" data-translate="nav-contact" class="hover:text-cyan-400 transition">CHANNELS</a>
         </nav>
 
-        <!-- Controls Block (Language Switch & External Target Bridge Setup) -->
-        <div class="flex items-center gap-4">
-            <!-- Dynamic Translation Switch Component -->
-            <div class="bg-slate-900 border border-slate-800 p-1 rounded-lg flex items-center">
-                <button onclick="toggleLanguage('en')" id="lang-btn-en" class="px-2.5 py-1 text-[10px] font-bold rounded transition-all duration-300 bg-cyan-500 text-slate-950">EN</button>
-                <button onclick="toggleLanguage('ro')" id="lang-btn-ro" class="px-2.5 py-1 text-[10px] font-bold rounded transition-all duration-300 text-slate-400 hover:text-white">RO</button>
+        <!-- Right Menu Router Toggle Switch Components -->
+        <div class="flex items-center gap-6">
+            <!-- IDEA 4: INSTANT LANGUAGE TOGGLE SWITCH ROUTER -->
+            <div class="bg-slate-950/80 border border-white/10 p-1 rounded-full flex items-center font-tech">
+                <button onclick="toggleLanguage('en')" id="lang-btn-en" class="px-3 py-1 text-[10px] font-black rounded-full transition-all duration-300 bg-cyan-400 text-slate-950">EN</button>
+                <button onclick="toggleLanguage('ro')" id="lang-btn-ro" class="px-3 py-1 text-[10px] font-black rounded-full transition-all duration-300 text-slate-400 hover:text-white">RO</button>
             </div>
 
-            <!-- Mini Fast Bridge Trigger -->
-            <a href="https://YOUR-EXTERNAL-STORE-LINK-HERE.com" target="_blank" data-translate="btn-buy-now" class="bridge-btn hidden sm:inline-block px-4 py-2 bg-gradient-to-r from-blue-600 to-cyan-500 text-slate-950 text-xs font-bold tracking-wider rounded-md transition shadow-md">BUY NOW</a>
+            <!-- IDEA 14: HIGH CONVERTING REDIRECT BUTTON BRIDGE -->
+            <a href="https://YOUR-EXTERNAL-STORE-LINK-HERE.com" target="_blank" data-translate="btn-buy" class="cta-hyper hidden sm:inline-block px-5 py-2.5 text-xs rounded-full font-tech tracking-wider">ORDER NOW</a>
         </div>
     </header>
 
-    <!-- MAIN MARKETING WRAPPER GRID -->
-    <main class="max-w-7xl mx-auto px-6 py-12 relative z-10 space-y-32">
+    <!-- MAIN GRID HIERARCHY -->
+    <main class="max-w-7xl mx-auto px-6 py-12 relative z-20 space-y-48">
         
-        <!-- HERO HEADLINER MODULE SECTION -->
-        <section id="overview" class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center min-h-[80vh] pt-4">
+        <!-- IDEA 3: MASSIVE HERO HERO SECTION WITH DEEP PROMOTION CONTENT SPACE -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center min-h-[85vh] pt-6">
+            
             <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
-                <!-- Live Tag Item -->
-                <div data-aos="fade-right" class="inline-flex items-center gap-2 px-3 py-1 bg-blue-950/40 border border-blue-900/40 rounded-full text-[11px] text-cyan-400 font-bold tracking-wider uppercase font-mono">
-                    <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-ping"></span> Launching 2026 Engine Edition
+                <div data-aos="fade-down" class="inline-flex items-center gap-2.5 px-4 py-1.5 bg-cyan-950/40 border border-cyan-500/30 rounded-full text-[11px] text-cyan-400 font-black tracking-widest uppercase font-tech">
+                    <i class="fa-solid fa-flask-vial animate-pulse"></i> Next-Gen Bio-Enhancement
                 </div>
 
-                <!-- Main Captivating Catchy Title Header -->
-                <h1 data-aos="fade-right" data-aos-delay="100" class="heading-font text-4xl sm:text-6xl font-black text-white leading-[1.15] tracking-tight">
-                    <span data-translate="hero-title-1">Experience The Absolute</span> <br class="hidden sm:block">
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-cyan-400 to-indigo-300 glow-text-cyan" data-translate="hero-title-2">Peak of Generation Power</span>
+                <h1 data-aos="fade-right" data-aos-delay="100" class="font-luxury text-4xl sm:text-7xl font-black text-white leading-[1.1] tracking-tight">
+                    <span data-translate="hero-h1">A Deep Revolution In</span> <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-400">Human Fluid Energy.</span>
                 </h1>
 
-                <!-- Product Explanation Summary Copy -->
-                <p data-aos="fade-right" data-aos-delay="200" data-translate="hero-desc" class="text-slate-400 text-sm sm:text-base max-w-xl mx-auto lg:mx-0 leading-relaxed">
-                    Unleash unmatched dynamic efficiency and precision crafting built directly for performance enthusiasts. Step forward into an era of flawless engineering and fluid ecosystem execution lines.
+                <p data-aos="fade-right" data-aos-delay="200" data-translate="hero-p" class="text-slate-400 text-sm sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed font-light">
+                    Engineered beyond ordinary energy limits. Vortex Elixir infuses cellular molecular pathways with active cognitive focus adapters and continuous physical hydration layers, unleashing pure, jitter-free neural superiority.
                 </p>
 
-                <!-- MASSIVE ANIMATED INTER-SITE ACTION DISPATCH TRIGGER LINK -->
-                <div data-aos="zoom-in" data-aos-delay="300" class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                    <a href="https://YOUR-EXTERNAL-STORE-LINK-HERE.com" target="_blank" class="bridge-btn px-8 py-4.5 bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-600 text-slate-950 font-black text-xs uppercase tracking-widest rounded-xl transition flex items-center gap-3 shadow-xl">
-                        <span data-translate="hero-cta">Secure Yours on the Store Platforms</span> 
-                        <i class="fa-solid fa-arrow-trend-up text-xs"></i>
+                <!-- IDEA 5: REAL-TIME TICKING BATCH INVENTORY AVAILABILITY FOMO BADGE -->
+                <div data-aos="fade-up" data-aos-delay="250" class="flex items-center justify-center lg:justify-start gap-4 text-xs font-mono">
+                    <div class="px-3 py-1 bg-red-950/30 border border-red-500/30 rounded text-red-400 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
+                        <span data-translate="fomo-text">ALLOCATION BATCH RUNNING LOW: Only 41 Bottles Remaining</span>
+                    </div>
+                </div>
+
+                <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 font-tech">
+                    <a href="https://YOUR-EXTERNAL-STORE-LINK-HERE.com" target="_blank" class="cta-hyper px-10 py-5 text-xs uppercase tracking-widest rounded-full transition flex items-center gap-3">
+                        <span data-translate="hero-cta-main">ACTIVATE ALLOCATION DISPATCH</span> 
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
                     </a>
                     
-                    <a href="#features" data-translate="hero-secondary-cta" class="px-6 py-4 bg-slate-900/60 hover:bg-slate-900 text-slate-300 hover:text-white text-xs tracking-widest font-bold uppercase rounded-xl border border-slate-800 hover:border-slate-700 transition">
-                        Explore Blueprint Specs
+                    <a href="#formula" data-translate="hero-cta-sec" class="px-8 py-5 bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white text-xs tracking-widest font-bold uppercase rounded-full border border-white/10 hover:border-cyan-500/40 transition">
+                        DECONSTRUCT FORMULA INDEX
                     </a>
                 </div>
             </div>
 
-            <!-- ANIMATED FLOATING HERO PRODUCT VISUAL IMAGE FRAME -->
-            <div data-aos="fade-left" data-aos-delay="200" class="lg:col-span-5 flex justify-center relative">
-                <div class="animate-float relative w-72 h-72 sm:w-96 sm:h-96 rounded-2xl glow-border bg-gradient-to-br from-slate-900 via-blue-950/20 to-slate-900 p-4 flex items-center justify-center overflow-hidden group">
-                    <!-- Placeholder Interactive Abstract Background Artwork Graphic Core -->
-                    <div class="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-overlay group-hover:scale-110 transition-transform duration-700" style="background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=600')"></div>
+            <!-- IDEA 13: IMMERSIVE KINETIC CAPSULE BOTTLE CONTAINER ASSEMBLY -->
+            <div class="lg:col-span-5 flex flex-col items-center justify-center relative">
+                <div data-aos="zoom-in-up" data-aos-delay="200" class="relative">
+                    <div class="absolute inset-0 bg-cyan-500/20 rounded-full blur-3xl transform scale-75 animate-pulse"></div>
                     
-                    <!-- Decorative Graphic Array Elements -->
-                    <div class="w-48 h-48 sm:w-64 sm:h-64 rounded-full border border-dashed border-cyan-500/20 flex items-center justify-center animate-[spin_20s_linear_infinite]">
-                        <div class="w-36 h-36 sm:w-48 sm:h-48 rounded-full border border-double border-blue-500/40 flex items-center justify-center"></div>
+                    <div class="bottle-container">
+                        <div class="bottle-cap"></div>
+                        <div class="bottle-liquid"></div>
+                        <div class="absolute inset-x-0 top-1/3 text-center z-10 px-4">
+                            <span class="font-luxury text-3xl font-black text-white tracking-widest block drop-shadow-lg">VORTEX</span>
+                            <span class="font-tech text-[9px] font-bold text-cyan-200 tracking-[0.4em] uppercase block mt-1">QUANTUM FUEL</span>
+                            <div class="w-12 h-[1px] bg-cyan-400 mx-auto mt-4 opacity-60"></div>
+                        </div>
                     </div>
-                    
-                    <!-- Centered Floating Hardware Core Accent Symbol Icon -->
-                    <div class="absolute text-5xl sm:text-7xl text-cyan-400 glow-text-cyan"><i class="fa-solid fa-cubes-stacked"></i></div>
                 </div>
 
-                <!-- Micro Secondary Floating UI Badges For Extra Animation Richness -->
-                <div class="absolute -top-4 -right-4 bg-slate-950/90 border border-blue-500/30 rounded-xl p-3 shadow-xl flex items-center gap-2 animate-bounce" style="animation-duration: 4s;">
-                    <i class="fa-solid fa-bolt text-amber-400"></i>
-                    <div class="text-[10px] font-mono"><span class="text-white block font-bold">120W+</span><span class="text-slate-500 block">Peak Delivery</span></div>
+                <!-- IDEA 12: ACCOMPANYING CERTIFICATION SPEC BADGE COMPONENT -->
+                <div data-aos="fade-up" data-aos-delay="400" class="mt-8 bg-slate-950/60 border border-white/10 backdrop-blur-md rounded-2xl p-4 flex items-center gap-4 text-left shadow-lg max-w-xs">
+                    <div class="w-10 h-10 rounded-full bg-cyan-500/10 flex items-center justify-center text-cyan-400 border border-cyan-500/30">
+                        <i class="fa-solid fa-droplet text-xs animate-bounce"></i>
+                    </div>
+                    <div>
+                        <div class="text-[11px] font-tech text-slate-400 uppercase tracking-widest font-bold" data-translate="badge-label">Active State Liquid</div>
+                        <div class="text-xs text-white font-medium mt-0.5" data-translate="badge-desc">Zero Synthetic Preservatives &amp; Refined Carbs.</div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- LIVE DYNAMIC PERFORMANCE STATS BANNER COUNTERS -->
-        <section class="grid grid-cols-2 md:grid-cols-4 gap-6 border-y border-slate-900 py-12 bg-slate-950/20 backdrop-blur-xs text-center">
-            <div data-aos="fade-up" data-aos-delay="0">
-                <div class="heading-font text-3xl sm:text-4xl font-bold text-white tracking-tight glow-text-blue">99.4%</div>
-                <div data-translate="stat-efficiency" class="text-[11px] text-slate-500 font-semibold uppercase tracking-wider mt-1">Operational Rating</div>
+        <!-- DATA SUMMARY NUMERICAL ANALYTICS STRIP BANNER -->
+        <section class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center border-y border-white/5 py-16 bg-slate-950/10 backdrop-blur-xs">
+            <div data-aos="fade-up">
+                <div class="font-luxury text-4xl font-black text-white">0%</div>
+                <div data-translate="b1" class="text-[11px] text-slate-500 font-bold uppercase tracking-widest mt-2 font-tech">Sugar Crash &amp; Artificial Colorants</div>
             </div>
             <div data-aos="fade-up" data-aos-delay="100">
-                <div class="heading-font text-3xl sm:text-4xl font-bold text-cyan-400 tracking-tight glow-text-cyan">&lt; 2.4ms</div>
-                <div data-translate="stat-latency" class="text-[11px] text-slate-500 font-semibold uppercase tracking-wider mt-1">Signal Response Latency</div>
+                <div class="font-luxury text-4xl font-black text-cyan-400">100%</div>
+                <div data-translate="b2" class="text-[11px] text-slate-500 font-bold uppercase tracking-widest mt-2 font-tech">Natural Adaptogenic Bio-Availability</div>
             </div>
             <div data-aos="fade-up" data-aos-delay="200">
-                <div class="heading-font text-3xl sm:text-4xl font-bold text-white tracking-tight">15X</div>
-                <div data-translate="stat-speed" class="text-[11px] text-slate-500 font-semibold uppercase tracking-wider mt-1">Structural Elastic Acceleration</div>
+                <div class="font-luxury text-4xl font-black text-white tracking-tight">8 Hours</div>
+                <div data-translate="b3" class="text-[11px] text-slate-500 font-bold uppercase tracking-widest mt-2 font-tech">Sustained Clean Focus Cycle</div>
             </div>
             <div data-aos="fade-up" data-aos-delay="300">
-                <div class="heading-font text-3xl sm:text-4xl font-bold text-cyan-400 tracking-tight glow-text-cyan">Zero</div>
-                <div data-translate="stat-maintenance" class="text-[11px] text-slate-500 font-semibold uppercase tracking-wider mt-1">Overhead Maintenance Costs</div>
+                <div class="font-luxury text-4xl font-black text-cyan-400">Bio-Cert</div>
+                <div data-translate="b4" class="text-[11px] text-slate-500 font-bold uppercase tracking-widest mt-2 font-tech">Laboratory Validated Composition</div>
             </div>
         </section>
 
-        <!-- DETAILED FEATURES TECHNICAL ARCHITECTURE SECTION -->
-        <section id="features" class="space-y-12">
-            <div class="text-center max-w-xl mx-auto space-y-3">
-                <h2 data-aos="fade-up" data-translate="features-pre" class="text-xs font-bold text-cyan-400 tracking-widest uppercase font-mono">Premium System Blueprint Modules</h2>
-                <p data-aos="fade-up" data-aos-delay="100" data-translate="features-title" class="heading-font text-2xl sm:text-4xl font-bold text-white">Engineered For Ultra High-Performance Output Lines</p>
+        <!-- IDEA 1: DYNAMIC INGREDIENT INTERACTIVE DATA SELECTOR TAB FILTER -->
+        <section id="formula" class="space-y-12">
+            <div class="text-center max-w-2xl mx-auto space-y-4">
+                <h2 data-aos="fade-up" data-translate="formula-pre" class="text-xs font-bold text-cyan-400 tracking-widest uppercase font-tech">Molecular Core Breakdown Matrix Index</h2>
+                <p data-aos="fade-up" data-aos-delay="100" class="font-luxury text-3xl sm:text-5xl font-bold text-white" data-translate="formula-title">Uncompromising Bio-Engineered Purity Parameters</p>
             </div>
 
-            <!-- Features Cards Matrix Layout -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Feature Card 1 -->
-                <div data-aos="fade-up" data-aos-delay="0" class="glow-border bg-slate-900/40 p-8 rounded-2xl flex flex-col justify-between group transition-all duration-300">
-                    <div class="space-y-4">
-                        <div class="w-12 h-12 rounded-xl bg-blue-950/60 border border-blue-800/40 flex items-center justify-center text-blue-400 text-lg group-hover:bg-blue-500 group-hover:text-slate-950 transition-all duration-300 shadow-md">
-                            <i class="fa-solid fa-shield-halved"></i>
-                        </div>
-                        <h3 data-translate="f1-title" class="heading-font font-bold text-lg text-white">Military Grade Shield Assembly</h3>
-                        <p data-translate="f1-desc" class="text-slate-400 text-xs leading-relaxed">Multi-layered defensive matrices that encapsulate the sensitive tracking cores against heavy signal interference waves.</p>
-                    </div>
-                    <div class="text-[10px] font-mono text-cyan-400 tracking-wider uppercase pt-6">Advanced Protection Protocol</div>
-                </div>
+            <div data-aos="fade-up" class="flex flex-wrap justify-center gap-4 font-tech text-xs">
+                <button onclick="switchIngredientTab('brain')" id="tab-btn-brain" class="px-6 py-3 bg-cyan-400 text-slate-950 font-bold rounded-full transition-all cursor-pointer shadow-lg">Alpha Wave Neuro-Adapters</button>
+                <button onclick="switchIngredientTab('energy')" id="tab-btn-energy" class="px-6 py-3 bg-slate-900 border border-white/10 text-slate-400 font-bold rounded-full transition-all cursor-pointer hover:text-white">Intracellular ATP Catalyst</button>
+                <button onclick="switchIngredientTab('stress')" id="tab-btn-stress" class="px-6 py-3 bg-slate-900 border border-white/10 text-slate-400 font-bold rounded-full transition-all cursor-pointer hover:text-white">Botanical Adaptogen Synergy</button>
+            </div>
 
-                <!-- Feature Card 2 -->
-                <div data-aos="fade-up" data-aos-delay="100" class="glow-border bg-gradient-to-b from-blue-950/20 to-transparent p-8 rounded-2xl flex flex-col justify-between group border-cyan-500/30 transition-all duration-300">
-                    <div class="space-y-4">
-                        <div class="w-12 h-12 rounded-xl bg-cyan-950/60 border border-cyan-800/40 flex items-center justify-center text-cyan-400 text-lg group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all duration-300 shadow-md">
-                            <i class="fa-solid fa-microchip"></i>
-                        </div>
-                        <h3 data-translate="f2-title" class="heading-font font-bold text-lg text-white">Quantum Processing Synchronization</h3>
-                        <p data-translate="f2-desc" class="text-slate-400 text-xs leading-relaxed">Integrated computing architecture modules running ultra-fast automated calibrations simultaneously on real-time channels.</p>
-                    </div>
-                    <div class="text-[10px] font-mono text-cyan-400 tracking-wider uppercase pt-6">Superconductive Processing</div>
+            <!-- Tab Content Wrapper Pane Component -->
+            <div data-aos="zoom-in" id="ingredient-display-panel" class="glass-premium p-8 sm:p-12 rounded-3xl max-w-3xl mx-auto flex flex-col md:flex-row gap-8 items-center">
+                <div class="w-16 h-16 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl" id="ing-icon">
+                    <i class="fa-solid fa-brain"></i>
                 </div>
-
-                <!-- Feature Card 3 -->
-                <div data-aos="fade-up" data-aos-delay="200" class="glow-border bg-slate-900/40 p-8 rounded-2xl flex flex-col justify-between group transition-all duration-300">
-                    <div class="space-y-4">
-                        <div class="w-12 h-12 rounded-xl bg-indigo-950/60 border border-indigo-800/40 flex items-center justify-center text-indigo-400 text-lg group-hover:bg-indigo-500 group-hover:text-slate-950 transition-all duration-300 shadow-md">
-                            <i class="fa-solid fa-chart-line"></i>
-                        </div>
-                        <h3 data-translate="f3-title" class="heading-font font-bold text-lg text-white">Predictive Diagnostic Optimization</h3>
-                        <p data-translate="f3-desc" class="text-slate-400 text-xs leading-relaxed">Smart machine analytical diagnostics mapping operational anomalies before any structural latency triggers emerge.</p>
+                <div class="space-y-4 flex-1">
+                    <h3 id="ing-title" class="font-luxury font-bold text-2xl text-white">Alpha Wave Neuro-Adapters</h3>
+                    <!-- IDEA 18: DYNAMIC INTERACTIVE LINEAR LAB PROGRESS METRIC MONITOR -->
+                    <div class="space-y-1">
+                        <div class="flex justify-between font-mono text-[10px] text-slate-400"><span>POTENCY RATING SPEC MATRIX</span><span class="text-cyan-400 font-bold" id="ing-percent">98.2%</span></div>
+                        <div class="w-full bg-slate-950 h-1.5 rounded-full overflow-hidden"><div id="ing-bar" class="bg-gradient-to-r from-blue-500 to-cyan-400 h-full rounded-full transition-all duration-1000" style="width: 98.2%;"></div></div>
                     </div>
-                    <div class="text-[10px] font-mono text-cyan-400 tracking-wider uppercase pt-6">Autonomous Metric Control</div>
+                    <p id="ing-desc" class="text-slate-400 text-sm font-light leading-relaxed">
+                        Enhances neurotransmitter channel pathways, locking the mental state into high-processing operational awareness and memory processing tracks effortlessly.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <!-- MEDIA VISUAL MEDIA GALLERY SHOWCASE MODULE -->
-        <section id="showcase" class="space-y-8">
-            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
-                <div class="space-y-2">
-                    <h2 data-aos="fade-right" data-translate="showcase-pre" class="text-xs font-bold text-slate-500 tracking-widest uppercase font-mono">Product Layout Showrooms</h2>
-                    <p data-aos="fade-right" data-aos-delay="100" data-translate="showcase-title" class="heading-font text-2xl sm:text-3xl font-bold text-white">Visual Blueprint Showrooms</p>
-                </div>
-                <p data-aos="fade-left" data-translate="showcase-desc" class="text-slate-400 text-xs max-w-xs leading-relaxed">
-                    Explore high-definition structural breakdowns demonstrating the component distribution and tactical ergonomics.
-                </p>
+        <!-- IDEA 6: OPTIMAL CHRONOLOGICAL STEP CONSUMPTION PROTOCOLS LINEUP -->
+        <section id="workflow" class="space-y-16">
+            <div class="text-center max-w-xl mx-auto space-y-2">
+                <h2 data-aos="fade-up" class="text-xs font-bold text-slate-500 tracking-widest uppercase font-tech" data-translate="flow-pre">Chronological Activation Sequence</h2>
+                <p data-aos="fade-up" data-aos-delay="100" class="font-luxury text-2xl sm:text-4xl font-bold text-white" data-translate="flow-title">How To Deploy Maximum Bio-Availability Cycles</p>
             </div>
 
-            <!-- Showcase Grid Cards Array Layout -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Image Card Item 1 -->
-                <div data-aos="zoom-in" class="glow-border rounded-2xl overflow-hidden bg-slate-900 group relative">
-                    <div class="h-64 sm:h-80 bg-cover bg-center opacity-70 group-hover:scale-105 group-hover:opacity-90 transition-all duration-700" style="background-image: url('https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?q=80&w=600')"></div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent p-6 flex flex-col justify-end">
-                        <span class="text-[10px] font-mono text-cyan-400 tracking-widest uppercase font-bold">Angle Perspective #01</span>
-                        <h4 data-translate="gallery-t1" class="heading-font font-bold text-base text-white mt-1">External Shell Core Finish</h4>
-                    </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+                <!-- Step Unit Node 1 -->
+                <div data-aos="fade-up" class="space-y-4 relative z-10 text-center md:text-left">
+                    <div class="w-12 h-12 rounded-xl bg-slate-950 border border-white/10 flex items-center justify-center font-luxury font-black text-cyan-400 text-lg shadow-inner">I</div>
+                    <h4 class="font-luxury text-white font-bold text-lg" data-translate="s1-t">Initialize Intracellular Intake</h4>
+                    <p class="text-slate-400 text-xs font-light leading-relaxed" data-translate="s1-d">Consume 150ml of cold concentrated fluid essence early morning directly before high focus tracking execution requirements open up.</p>
                 </div>
-
-                <!-- Image Card Item 2 -->
-                <div data-aos="zoom-in" data-aos-delay="100" class="glow-border rounded-2xl overflow-hidden bg-slate-900 group relative">
-                    <div class="h-64 sm:h-80 bg-cover bg-center opacity-70 group-hover:scale-105 group-hover:opacity-90 transition-all duration-700" style="background-image: url('https://images.unsplash.com/photo-1639322537228-f710d846310a?q=80&w=600')"></div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent p-6 flex flex-col justify-end">
-                        <span class="text-[10px] font-mono text-cyan-400 tracking-widest uppercase font-bold">Angle Perspective #02</span>
-                        <h4 data-translate="gallery-t2" class="heading-font font-bold text-base text-white mt-1">Internal Bus Array Node Vectors</h4>
-                    </div>
+                <!-- Step Unit Node 2 -->
+                <div data-aos="fade-up" data-aos-delay="100" class="space-y-4 relative z-10 text-center md:text-left">
+                    <div class="w-12 h-12 rounded-xl bg-slate-950 border border-white/10 flex items-center justify-center font-luxury font-black text-cyan-400 text-lg shadow-inner">II</div>
+                    <h4 class="font-luxury text-white font-bold text-lg" data-translate="s2-t">Quantum Fluid Sync Vector</h4>
+                    <p class="text-slate-400 text-xs font-light leading-relaxed" data-translate="s2-d">Active nutrients map into tracking cellular receptors inside 12 minutes, stabilizing blood sugar channels smoothly.</p>
+                </div>
+                <!-- Step Unit Node 3 -->
+                <div data-aos="fade-up" data-aos-delay="200" class="space-y-4 relative z-10 text-center md:text-left">
+                    <div class="w-12 h-12 rounded-xl bg-slate-950 border border-white/10 flex items-center justify-center font-luxury font-black text-cyan-400 text-lg shadow-inner">III</div>
+                    <h4 class="font-luxury text-white font-bold text-lg" data-translate="s3-t">8-Hour Baseline Supremacy</h4>
+                    <p class="text-slate-400 text-xs font-light leading-relaxed" data-translate="s3-d">Enjoy continuous clean brain processing power balance with absolute zero crash, fatigue drops, or sudden vascular spikes.</p>
                 </div>
             </div>
         </section>
 
-        <!-- HIGHLY CONVERTING EXTERNAL REDIRECT BANNER BRIDGE -->
-        <section data-aos="zoom-in-up" class="glow-border rounded-3xl p-8 sm:p-12 bg-gradient-to-r from-blue-950/40 via-slate-900 to-indigo-950/30 text-center relative overflow-hidden">
-            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-80 h-80 bg-cyan-500/10 rounded-full blur-2xl pointer-events-none"></div>
+        <!-- IDEA 7: ADVANCED COMPETITIVE BLUEPRINT SPEC COMPARISON MATRIX SYSTEM -->
+        <section id="comparisons" class="space-y-12">
+            <div class="text-center max-w-xl mx-auto space-y-2">
+                <h2 data-aos="fade-up" class="text-xs font-bold text-cyan-400 tracking-widest uppercase font-tech" data-translate="matrix-pre">Architecture System Metrics</h2>
+                <p data-aos="fade-up" data-aos-delay="100" class="font-luxury text-2xl sm:text-4xl font-bold text-white" data-translate="matrix-title">How Vortex Rewrites Category Benchmarks</p>
+            </div>
+
+            <div data-aos="zoom-in" class="glass-premium rounded-3xl overflow-hidden font-tech text-xs">
+                <table class="w-full border-collapse text-center">
+                    <thead>
+                        <tr class="bg-slate-950/80 text-slate-400 border-b border-white/5 uppercase font-bold tracking-widest text-[10px]">
+                            <th class="p-5 text-left">SPECIFICATION VARIABLE</th>
+                            <th class="p-5 text-cyan-400 bg-cyan-950/20">VORTEX PRO-ELIXIR</th>
+                            <th class="p-5">STANDARD ENERGIZERS</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-white/5 font-light">
+                        <tr>
+                            <td class="p-5 text-left font-medium text-white">Focus Adaptation Engine</td>
+                            <td class="p-5 font-bold text-cyan-400 bg-cyan-950/10 flex items-center justify-center gap-2"><i class="fa-solid fa-circle-check"></i> Pure Alpha Undiluted</td>
+                            <td class="p-5 text-slate-600">Zero / High Synthetic Caffeine</td>
+                        </tr>
+                        <tr>
+                            <td class="p-5 text-left font-medium text-white">Glycemic Crash Prevention Matrix</td>
+                            <td class="p-5 font-bold text-cyan-400 bg-cyan-950/10"><i class="fa-solid fa-circle-check"></i> Integrated Continuous Shield</td>
+                            <td class="p-5 text-slate-600">Failed Rating (Heavy Sugar Drop)</td>
+                        </tr>
+                        <tr>
+                            <td class="p-5 text-left font-medium text-white">Mitochondrial Absorption Velocity</td>
+                            <td class="p-5 font-bold text-cyan-400 bg-cyan-950/10"><i class="fa-solid fa-bolt"></i> &lt; 12 Minutes Fluid Ingest</td>
+                            <td class="p-5 text-slate-600">90+ Mins Via Complex Digestion</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- IDEA 8: PARALLAX-INSPIRED WIDE MANIFESTO MARKETING LAYOUT SPACE -->
+        <section id="narrative" class="glass-premium rounded-[40px] p-8 sm:p-16 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
             
-            <div class="max-w-2xl mx-auto space-y-6 relative z-10">
-                <h3 data-translate="banner-title" class="heading-font text-3xl sm:text-5xl font-black text-white tracking-tight">Ready to Initialize Absolute Superiority Parameters?</h3>
-                <p data-translate="banner-desc" class="text-slate-400 text-xs sm:text-sm max-w-md mx-auto leading-relaxed">
-                    Don't delay allocation sequences. Connect instantly with our checkout merchant lines and complete acquisition vectors.
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+                <div class="lg:col-span-6 space-y-6">
+                    <span data-translate="story-pre" class="text-xs font-bold text-slate-500 tracking-widest uppercase font-tech block">The Visionary Concept Laboratory Lines</span>
+                    <h3 data-translate="story-title" class="font-luxury text-3xl sm:text-5xl font-black text-white leading-[1.2]">Forged For Connoisseurs Who Reject Mediocrity</h3>
+                    <div class="w-20 h-[2px] bg-gradient-to-r from-cyan-400 to-transparent"></div>
+                </div>
+                
+                <div class="lg:col-span-6 space-y-6 text-slate-400 text-sm font-light leading-relaxed">
+                    <p data-translate="story-p1">
+                        We spent years collaborating alongside clinical neuroscientists and performance sports dietitians to engineer an elite consumable fluid template that defies conventional energy category rules. Vortex Elixir doesn't simply give a synthetic temporary high; it reshapes the cellular performance ecosystem.
+                    </p>
+                    <p data-translate="story-p2">
+                        From precision morning focus tasks to late-night technical development milestones, our formula delivers steady baseline execution optimization so you can manifest peak human operational mastery whenever required.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- IDEA 10: INFLUENCER SOCIAL TESTIMONIAL DISPLAY CARDS GRID GRID -->
+        <section class="space-y-12">
+            <div class="text-center max-w-xl mx-auto space-y-2">
+                <h2 data-aos="fade-up" class="text-xs font-bold text-cyan-400 tracking-widest uppercase font-tech" data-translate="t-pre">Verified Endorsements</h2>
+                <p data-aos="fade-up" data-aos-delay="100" class="font-luxury text-2xl sm:text-4xl font-bold text-white" data-translate="t-title">Trusted By High-Output Builders worldwide</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 font-light text-slate-400 text-xs sm:text-sm">
+                <!-- Testimonial 1 -->
+                <div data-aos="fade-right" class="glass-premium p-8 rounded-3xl space-y-4">
+                    <div class="text-amber-400 flex gap-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="italic leading-relaxed">"The cognitive clarity shifts within ten minutes of taking Vortex. My programming velocity stayed entirely flat for seven straight hours without a single spike."</p>
+                    <div class="font-tech font-bold text-white uppercase tracking-wider text-[10px]">— Technical Systems Architect, Berlin</div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div data-aos="fade-left" class="glass-premium p-8 rounded-3xl space-y-4">
+                    <div class="text-amber-400 flex gap-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="italic leading-relaxed">"Unlike synthetic pre-workouts, Vortex balances cognitive stability with steady cellular hydration layers perfectly. The baseline performance is pure mastery."</p>
+                    <div class="font-tech font-bold text-white uppercase tracking-wider text-[10px]">— Competitive Mechanics Athlete</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- IDEA 9: INTERACTIVE CSS FAQ ACCORDION COLLAPSIBLE ELEMENT ROW -->
+        <section id="faq" class="space-y-12 max-w-3xl mx-auto">
+            <div class="text-center space-y-2">
+                <h2 data-aos="fade-up" class="text-xs font-bold text-slate-500 tracking-widest uppercase font-tech" data-translate="faq-pre">System Architecture Inquiries</h2>
+                <p data-aos="fade-up" data-aos-delay="100" class="font-luxury text-2xl sm:text-4xl font-bold text-white" data-translate="faq-title">Frequently Logged Diagnostics</p>
+            </div>
+
+            <div data-aos="fade-up" class="space-y-4 font-tech text-xs sm:text-sm">
+                <!-- Accordion Box 1 -->
+                <details class="glass-premium rounded-2xl group open:border-cyan-400/50 transition-all duration-300">
+                    <summary class="p-6 font-bold text-white uppercase tracking-wider flex justify-between items-center cursor-pointer list-none">
+                        <span data-translate="q1">Is Vortex Safe for Everyday Continuous Intake Sequence?</span>
+                        <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-400 font-light leading-relaxed border-t border-white/5 pt-4" data-translate="a1">
+                        Absolutely. The formulation matrix is built completely on lab-verified, non-synthetic botanical adaptogens designed to protect standard biological homeostatic parameters safely every day.
+                    </div>
+                </details>
+                <!-- Accordion Box 2 -->
+                <details class="glass-premium rounded-2xl group open:border-cyan-400/50 transition-all duration-300">
+                    <summary class="p-6 font-bold text-white uppercase tracking-wider flex justify-between items-center cursor-pointer list-none">
+                        <span data-translate="q2">How Does the Store Redirection Process Function?</span>
+                        <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-400 font-light leading-relaxed border-t border-white/5 pt-4" data-translate="a2">
+                        Clicking any action dispatch triggers securely hands your connection routing token forward to our encrypted merchant sales checkout platform to complete acquisition protocols safely.
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- DYNAMIC FALLBACK CONVERSION ACCELERATION PLATFORM ACTION BANNER -->
+        <section data-aos="zoom-in" class="glass-premium rounded-3xl p-8 sm:p-16 text-center relative overflow-hidden bg-radial from-cyan-950/20 to-transparent">
+            <div class="max-w-2xl mx-auto space-y-8 relative z-10">
+                <h3 data-translate="banner-h" class="font-luxury text-3xl sm:text-6xl font-black text-white leading-tight">Elevate Your Physical Senses Beyond Standard Limits</h3>
+                <p data-translate="banner-p" class="text-slate-400 text-xs sm:text-base font-light max-w-lg mx-auto leading-relaxed">
+                    Ready to load pure bio-engineering into your system? Click the action matrix trigger button below to route directly to our official decentralized checkout distribution pipeline servers instantly.
                 </p>
-                <div class="pt-4">
-                    <a href="https://YOUR-EXTERNAL-STORE-LINK-HERE.com" target="_blank" class="bridge-btn px-10 py-5 bg-gradient-to-r from-blue-500 via-cyan-400 to-indigo-500 text-slate-950 font-black text-xs uppercase tracking-widest rounded-xl transition inline-flex items-center gap-3 shadow-2xl">
-                        <span data-translate="banner-cta">REDIRECT TO SECURE ACQUISITION SERVER</span>
-                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                <div class="pt-4 font-tech">
+                    <a href="https://YOUR-EXTERNAL-STORE-LINK-HERE.com" target="_blank" class="cta-hyper px-12 py-5 text-xs font-black uppercase tracking-widest rounded-full transition inline-flex items-center gap-3">
+                        <span data-translate="banner-btn">ROUTE TO ACQUISITION CHECKOUT HUB</span>
+                        <i class="fa-solid fa-circle-chevron-right text-xs"></i>
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- CONTACT CHANNELS / DISPATCH INQUIRY FORM MODULE -->
-        <section id="contact" class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <!-- SYSTEM CONTACT INTAKE FORM REPOSITORY MATRICES -->
+        <section id="inquiry" class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
             <div class="lg:col-span-5 space-y-6">
-                <div class="space-y-2">
-                    <h2 data-aos="fade-right" data-translate="contact-pre" class="text-xs font-bold text-cyan-400 tracking-widest uppercase font-mono">Secure Direct Communication Channels</h2>
-                    <p data-aos="fade-right" data-aos-delay="100" data-translate="contact-title" class="heading-font text-2xl sm:text-3xl font-bold text-white">Request Custom Specifications</p>
+                <div class="space-y-3">
+                    <h2 data-aos="fade-right" data-translate="c-pre" class="text-xs font-bold text-cyan-400 tracking-widest uppercase font-tech">Direct Communication Access Protocols</h2>
+                    <p data-aos="fade-right" data-aos-delay="100" class="font-luxury text-2xl sm:text-4xl font-bold text-white" data-translate="c-title">Connect With Our Research Logistics Core</p>
                 </div>
-                <p data-aos="fade-right" data-aos-delay="200" data-translate="contact-desc" class="text-slate-400 text-xs leading-relaxed">
-                    Have specific commercial requests or bulk logistics inquiries? Submit your data packet arrays through our encryption layer networks.
+                <p data-aos="fade-right" data-aos-delay="200" data-translate="c-desc" class="text-slate-400 text-xs sm:text-sm font-light leading-relaxed">
+                    Have queries regarding bulk corporate distribution pipelines, institutional verification parameters, or personal subscription programs? Send your packet array.
                 </p>
+
+                <!-- IDEA 19: INTEGRATED INLINE NEWSLETTER TRANSMISSION FIELD CARD -->
+                <div data-aos="fade-up" class="glass-premium p-6 rounded-2xl space-y-3 font-tech text-xs">
+                    <div class="font-bold text-white uppercase tracking-wider text-[10px]">Matrix Intel Broadcast Feed</div>
+                    <div class="flex bg-slate-950 rounded-xl border border-white/5 overflow-hidden p-1">
+                        <input type="email" placeholder="Intel Routing Link" class="bg-transparent text-white px-3 py-2 flex-1 focus:outline-none placeholder-slate-700">
+                        <button onclick="alert('⚡ Feed Link Registered.')" class="bg-cyan-400 text-slate-950 px-4 py-2 rounded-lg font-bold tracking-widest uppercase text-[10px] cursor-pointer">JOIN</button>
+                    </div>
+                </div>
                 
-                <!-- Social Connections Mapping Channels Block -->
-                <div data-aos="fade-up" class="flex items-center gap-4 pt-2">
-                    <a href="https://facebook.com" target="_blank" class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-cyan-400 hover:border-cyan-500/40 transition"><i class="fa-brands fa-facebook-f text-sm"></i></a>
-                    <a href="https://instagram.com" target="_blank" class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-cyan-400 hover:border-cyan-500/40 transition"><i class="fa-brands fa-instagram text-sm"></i></a>
-                    <a href="https://linkedin.com" target="_blank" class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-cyan-400 hover:border-cyan-500/40 transition"><i class="fa-brands fa-linkedin-in text-sm"></i></a>
+                <div class="flex items-center gap-4 pt-2">
+                    <a href="https://facebook.com" target="_blank" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-cyan-400 hover:border-cyan-400/50 transition-all duration-300"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-cyan-400 hover:border-cyan-400/50 transition-all duration-300"><i class="fa-brands fa-instagram text-sm"></i></a>
+                    <a href="https://linkedin.com" target="_blank" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-cyan-400 hover:border-cyan-400/50 transition-all duration-300"><i class="fa-brands fa-linkedin-in text-sm"></i></a>
                 </div>
             </div>
 
-            <!-- Interactive Marketing Contact Grid Fields Block -->
-            <div data-aos="fade-left" class="lg:col-span-7 glow-border bg-slate-900/30 p-6 sm:p-8 rounded-2xl">
-                <form id="marketing-inquiry-form" class="space-y-4 text-xs">
+            <div data-aos="fade-left" class="lg:col-span-7 glass-premium p-6 sm:p-10 rounded-3xl font-tech">
+                <form id="vortex-secure-form" class="space-y-5 text-xs">
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div class="space-y-1.5">
-                            <label data-translate="label-name" class="block font-bold text-slate-400 uppercase tracking-wider text-[10px]">Your Name *</label>
-                            <input type="text" required placeholder="John Doe" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-cyan-400 transition placeholder-slate-700">
+                        <div class="space-y-2">
+                            <label data-translate="l-name" class="block font-bold text-slate-400 uppercase tracking-widest text-[10px]">Your Name *</label>
+                            <input type="text" required placeholder="Alexander Vance" class="w-full bg-slate-950/60 border border-white/10 rounded-xl px-4 py-4 text-white focus:outline-none focus:border-cyan-400 transition placeholder-slate-700">
                         </div>
-                        <div class="space-y-1.5">
-                            <label data-translate="label-email" class="block font-bold text-slate-400 uppercase tracking-wider text-[10px]">Communications Routing Link *</label>
-                            <input type="email" required placeholder="john@example.com" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-cyan-400 transition placeholder-slate-700">
+                        <div class="space-y-2">
+                            <!-- IDEA 17: STRATEGIC EXPLANATORY MICRO-COPY TOOLTIP -->
+                            <label data-translate="l-mail" class="block font-bold text-slate-400 uppercase tracking-widest text-[10px]">Digital Comm Routing Link *</label>
+                            <input type="email" required placeholder="alex@vance.com" class="w-full bg-slate-950/60 border border-white/10 rounded-xl px-4 py-4 text-white focus:outline-none focus:border-cyan-400 transition placeholder-slate-700">
                         </div>
                     </div>
-                    <div class="space-y-1.5">
-                        <label data-translate="label-msg" class="block font-bold text-slate-400 uppercase tracking-wider text-[10px]">Message Package Matrix *</label>
-                        <textarea rows="4" required placeholder="..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-cyan-400 transition placeholder-slate-700 resize-none"></textarea>
+                    <div class="space-y-2">
+                        <label data-translate="l-msg" class="block font-bold text-slate-400 uppercase tracking-widest text-[10px]">Inquiry Narrative Content Vector *</label>
+                        <textarea rows="4" required placeholder="..." class="w-full bg-slate-950/60 border border-white/10 rounded-xl px-4 py-4 text-white focus:outline-none focus:border-cyan-400 transition placeholder-slate-700 resize-none"></textarea>
                     </div>
-                    <button type="submit" data-translate="btn-submit" class="w-full py-4 bg-slate-950 hover:bg-slate-900 text-cyan-400 border border-slate-800 hover:border-cyan-500/40 font-bold uppercase tracking-widest rounded-xl transition shadow-md cursor-pointer">
-                        Dispatch Transmission Arrays
+
+                    <!-- IDEA 15: TRUST CONVERTING SECURITY ENCRYPTION INDICATOR HOVER WRAPPER -->
+                    <div class="flex items-center gap-2 font-mono text-[10px] text-slate-500 py-1">
+                        <i class="fa-solid fa-lock text-cyan-500/60"></i>
+                        <span>SECURE LAYER PROTOCOL TRANSMISSION ENCRYPTED VIA END-TO-END ARRAY MODES</span>
+                    </div>
+
+                    <button type="submit" data-translate="btn-submit" class="w-full py-4.5 bg-slate-950 hover:bg-slate-900 text-cyan-400 border border-white/10 hover:border-cyan-400/50 font-bold uppercase tracking-widest rounded-xl transition cursor-pointer shadow-lg">
+                        TRANSMIT INQUIRY PACKAGE
                     </button>
                 </form>
             </div>
@@ -359,137 +549,222 @@
 
     </main>
 
-    <!-- FOOTER COPYRIGHT NODE MARKER -->
-    <footer class="border-t border-slate-900 bg-slate-950/60 mt-24 py-8 text-center text-[11px] text-slate-600 font-mono tracking-widest">
-        <div>&copy; 2026 VORTEX DIGITAL HARDWARE CORE LABS. ALL RIGHTS RESERVED.</div>
+    <!-- IDEA 20: ULTRA-CLEAN ENCRYPTED LEGAL SECURITY REPOSITORY FOOTER MARKER -->
+    <footer class="border-t border-white/5 bg-slate-950/40 mt-40 py-10 text-center text-[11px] text-slate-600 font-mono tracking-widest">
+        <div>&copy; 2026 VORTEX MOLECULAR NUTRITION CORE LABS. TECHNOLOGY PROTECTED BY SYSTEM REGISTRY LAWS.</div>
     </footer>
 
-    <!-- INTERACTION LOGIC ENGINE & ANIMATION FRAMEWORK SCRIPTS -->
+    <!-- INTERACTION LOGIC & ENGINE ASSEMBLIES -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        // Initialize Animate On Scroll Framework Core Layout Engine
-        AOS.init({
-            duration: 900,
-            once: true,
-            offset: 100
-        });
+        // Initialize Animate On Scroll Framework
+        AOS.init({ duration: 1000, once: true, offset: 120 });
 
-        // Dual-Language Local Translation Lexicon Array Map Matrices
-        const translations = {
+        // IDEA 2: ADVANCED KINETIC LIQUID PARTICLES RISING EMISSION ENGINE
+        const bubbleWrapper = document.getElementById('bubble-container');
+        function createLiquidParticle() {
+            const bubble = document.createElement('div');
+            bubble.classList.add('bubble');
+            const size = Math.random() * 8 + 4;
+            bubble.style.width = `${size}px`;
+            bubble.style.height = `${size}px`;
+            bubble.style.left = `${Math.random() * 100}vw`;
+            bubble.style.animationDuration = `${Math.random() * 6 + 8}s`;
+            bubble.style.animationDelay = `${Math.random() * 3}s`;
+            bubbleWrapper.appendChild(bubble);
+            setTimeout(() => { bubble.remove(); }, 14000);
+        }
+        setInterval(createLiquidParticle, 220);
+
+        // Advanced Translation Lexicon Map Dictionary Database Arrays Matrix
+        const lexicon = {
             en: {
-                "nav-overview": "OVERVIEW",
-                "nav-features": "FEATURES",
-                "nav-gallery": "SHOWCASE",
-                "nav-contact": "CONNECT",
-                "btn-buy-now": "BUY NOW",
-                "hero-title-1": "Experience The Absolute",
-                "hero-title-2": "Peak of Generation Power",
-                "hero-desc": "Unleash unmatched dynamic efficiency and precision crafting built directly for performance enthusiasts. Step forward into an era of flawless engineering and fluid ecosystem execution lines.",
-                "hero-cta": "Secure Yours on the Store Platforms",
-                "hero-secondary-cta": "Explore Blueprint Specs",
-                "stat-efficiency": "Operational Rating",
-                "stat-latency": "Signal Response Latency",
-                "stat-speed": "Structural Elastic Acceleration",
-                "stat-maintenance": "Overhead Maintenance Costs",
-                "features-pre": "Premium System Blueprint Modules",
-                "features-title": "Engineered For Ultra High-Performance Output Lines",
-                "f1-title": "Military Grade Shield Assembly",
-                "f1-desc": "Multi-layered defensive matrices that encapsulate the sensitive tracking cores against heavy signal interference waves.",
-                "f2-title": "Quantum Processing Synchronization",
-                "f2-desc": "Integrated computing architecture modules running ultra-fast automated calibrations simultaneously on real-time channels.",
-                "f3-title": "Predictive Diagnostic Optimization",
-                "f3-desc": "Smart machine analytical diagnostics mapping operational anomalies before any structural latency triggers emerge.",
-                "showcase-pre": "Product Layout Showrooms",
-                "showcase-title": "Visual Blueprint Showrooms",
-                "showcase-desc": "Explore high-definition structural breakdowns demonstrating the component distribution and tactical ergonomics.",
-                "gallery-t1": "External Shell Core Finish",
-                "gallery-t2": "Internal Bus Array Node Vectors",
-                "banner-title": "Ready to Initialize Absolute Superiority Parameters?",
-                "banner-desc": "Don't delay allocation sequences. Connect instantly with our checkout merchant lines and complete acquisition vectors.",
-                "banner-cta": "REDIRECT TO SECURE ACQUISITION SERVER",
-                "contact-pre": "Secure Direct Communication Channels",
-                "contact-title": "Request Custom Specifications",
-                "contact-desc": "Have specific commercial requests or bulk logistics inquiries? Submit your data packet arrays through our encryption layer networks.",
-                "label-name": "Your Name *",
-                "label-email": "Communications Routing Link *",
-                "label-msg": "Message Package Matrix *",
-                "btn-submit": "Dispatch Transmission Arrays"
+                "nav-formula": "THE FORMULA",
+                "nav-steps": "PROTOCOLS",
+                "nav-matrix": "MATRIX",
+                "nav-story": "MANIFESTO",
+                "nav-faq": "FAQ",
+                "nav-contact": "CHANNELS",
+                "btn-buy": "ORDER NOW",
+                "hero-h1": "A Deep Revolution In",
+                "hero-p": "Engineered beyond ordinary energy limits. Vortex Elixir infuses cellular molecular pathways with active cognitive focus adapters and continuous physical hydration layers, unleashing pure, jitter-free neural superiority.",
+                "hero-cta-main": "ACTIVATE ALLOCATION DISPATCH",
+                "hero-cta-sec": "DECONSTRUCT FORMULA INDEX",
+                "fomo-text": "ALLOCATION BATCH RUNNING LOW: Only 41 Bottles Remaining",
+                "badge-label": "Active State Liquid",
+                "badge-desc": "Zero Synthetic Preservatives & Refined Carbs.",
+                "formula-pre": "Molecular Core Breakdown Matrix Index",
+                "formula-title": "Uncompromising Bio-Engineered Purity Parameters",
+                "flow-pre": "Chronological Activation Sequence",
+                "flow-title": "How To Deploy Maximum Bio-Availability Cycles",
+                "s1-t": "Initialize Intracellular Intake",
+                "s1-d": "Consume 150ml of cold concentrated fluid essence early morning directly before high focus tracking requirements open up.",
+                "s2-t": "Quantum Fluid Sync Vector",
+                "s2-d": "Active nutrients map into tracking cellular receptors inside 12 minutes, stabilizing blood sugar channels smoothly.",
+                "s3-t": "8-Hour Baseline Supremacy",
+                "s3-d": "Enjoy continuous clean brain processing power balance with absolute zero crash, fatigue drops, or sudden vascular spikes.",
+                "matrix-pre": "Architecture System Metrics",
+                "matrix-title": "How Vortex Rewrites Category Benchmarks",
+                "story-pre": "The Visionary Concept Laboratory Lines",
+                "story-title": "Forged For Connoisseurs Who Reject Mediocrity",
+                "story-p1": "We spent years collaborating alongside clinical neuroscientists and performance sports dietitians to engineer an elite consumable fluid template that defies conventional energy category rules. Vortex Elixir doesn't simply give a synthetic temporary high; it reshapes the cellular performance ecosystem.",
+                "story-p2": "From precision morning focus tasks to late-night technical development milestones, our formula delivers steady baseline execution optimization so you can manifest peak human operational mastery whenever required.",
+                "t-pre": "Verified Endorsements",
+                "t-title": "Trusted By High-Output Builders worldwide",
+                "faq-pre": "System Architecture Inquiries",
+                "faq-title": "Frequently Logged Diagnostics",
+                "q1": "Is Vortex Safe for Everyday Continuous Intake Sequence?",
+                "a1": "Absolutely. The formulation matrix is built completely on lab-verified, non-synthetic botanical adaptogens designed to protect standard biological homeostatic parameters safely every day.",
+                "q2": "How Does the Store Redirection Process Function?",
+                "a2": "Clicking any action dispatch triggers securely hands your connection routing token forward to our encrypted merchant sales checkout platform to complete acquisition protocols safely.",
+                "b1": "Sugar Crash & Artificial Colorants",
+                "b2": "Natural Adaptogenic Bio-Availability",
+                "b3": "Sustained Clean Focus Cycle",
+                "b4": "Laboratory Validated Composition",
+                "banner-h": "Elevate Your Physical Senses Beyond Standard Limits",
+                "banner-p": "Ready to load pure bio-engineering into your system? Click the action matrix trigger button below to route directly to our official decentralized checkout distribution pipeline servers instantly.",
+                "banner-btn": "ROUTE TO ACQUISITION CHECKOUT HUB",
+                "c-pre": "Direct Communication Access Protocols",
+                "c-title": "Connect With Our Research Logistics Core",
+                "c-desc": "Have queries regarding bulk corporate distribution pipelines, institutional verification parameters, or personal subscription programs? Send your packet array.",
+                "l-name": "Your Name *",
+                "l-mail": "Digital Comm Routing Link *",
+                "l-msg": "Inquiry Narrative Content Vector *",
+                "btn-submit": "TRANSMIT INQUIRY PACKAGE"
             },
             ro: {
-                "nav-overview": "PREZENTARE",
-                "nav-features": "PROPRIETĂȚI",
-                "nav-gallery": "PORTOFOLIU",
-                "nav-contact": "CONTACT",
-                "btn-buy-now": "CUMPĂRĂ ACUM",
-                "hero-title-1": "Experimentează Absolutul",
-                "hero-title-2": "Vârful Puterii Generației Noi",
-                "hero-desc": "Dezlănțuie o eficiență dinamică fără egal și o precizie de execuție creată direct pentru pasionații de performanță pură. Pășește acum într-o eră a ingineriei impecabile.",
-                "hero-cta": "Asigură piesa ta pe platforma magazinului",
-                "hero-secondary-cta": "Explorează Specificațiile",
-                "stat-efficiency": "Rating de Funcționare",
-                "stat-latency": "Latență de Răspuns Semnal",
-                "stat-speed": "Accelerație Elastică Structurală",
-                "stat-maintenance": "Costuri Regie Mentenanță",
-                "features-pre": "Module Premium de Proiect",
-                "features-title": "Proiectat Pentru Linii de Producție de Ultra Înaltă Performanță",
-                "f1-title": "Scut de Protecție Clasificată Militar",
-                "f1-desc": "Matrice defensive stratificate care încapsulează nucleele sensibile de urmărire împotriva valurilor puternice de interferență.",
-                "f2-title": "Sincronizare de Procesare Cuantică",
-                "f2-desc": "Module integrate de arhitectură de calcul care rulează calibrări automate ultra-rapide în timp real.",
-                "f3-title": "Optimizare Predictivă prin Diagnostic",
-                "f3-desc": "Diagnostic inteligent de analiză a mașinii care mapează anomaliile operaționale înainte de apariția erorilor.",
-                "showcase-pre": "Săli de Prezentare Produs",
-                "showcase-title": "Vitrine de Prezentare Vizuală",
-                "showcase-desc": "Explorează descompuneri structurale de înaltă definiție care demonstrează distribuția componentelor și ergonomia tactică.",
-                "gallery-t1": "Finisaj Exterior al Carcasei Nucleului",
-                "gallery-t2": "Vectori de Noduri ai Matricei Interne",
-                "banner-title": "Ești Gata să Inițializezi Parametrii de Superioritate Absolută?",
-                "banner-desc": "Nu amâna secvențele de alocare. Conectează-te instantaneu cu liniile noastre de comercianți și finalizează achiziția.",
-                "banner-cta": "REDIRECȚIONARE CĂTRE SERVERUL SECURIZAT",
-                "contact-pre": "Canale Securizate de Comunicare Directă",
-                "contact-title": "Solicită Specificații Personalizate",
-                "contact-desc": "Ai cereri comerciale specifice sau nelămuriri logistice? Trimite matricea ta de date prin rețelele noastre de criptare.",
-                "label-name": "Numele Tău *",
-                "label-email": "Link Rutare Comunicații (Email) *",
-                "label-msg": "Matrice Mesaj Contract *",
-                "btn-submit": "Expediază Rețelele de Transmisie"
+                "nav-formula": "FORMULA",
+                "nav-steps": "PROTOCOALE",
+                "nav-matrix": "MATRICE",
+                "nav-story": "MANIFEST",
+                "nav-faq": "FAQ",
+                "nav-contact": "CANALE",
+                "btn-buy": "COMANDEAZĂ ACUM",
+                "hero-h1": "O Revoluție Profundă În",
+                "hero-p": "Proiectat dincolo de limitele obișnuite ale energiei. Vortex Elixir infuzează căile moleculare celulare cu adaptori activi de concentrare cognitivă și straturi de hidratare continuă, eliberând o superioritate neurală pură.",
+                "hero-cta-main": "ACTIVEAZĂ EXPEDIEREA COMENZII",
+                "hero-cta-sec": "DECONSTRUIE INDEXUL FORMULEI",
+                "fomo-text": "STOC LIMITAT PENTRU SERIE: Au mai rămas doar 41 de sticle",
+                "badge-label": "Lichid în Stare Activă",
+                "badge-desc": "Zero Conservanți Sintetici și Carbohidrați Rafinați.",
+                "formula-pre": "Indexul Matricii de Descompunere Moleculară",
+                "formula-title": "Parametri de Puritate Bio-Inginerizată Fără Compromis",
+                "flow-pre": "Secvența Cronologică de Activare",
+                "flow-title": "Cum să Desfășori Ciclul Maxim de Bio-Disponibilitate",
+                "s1-t": "Inițializează Consumul Intracelular",
+                "s1-d": "Consumă 150 ml de esență lichidă concentrată rece dimineața devreme, direct înainte de a deschide sarcinile de execuție.",
+                "s2-t": "Vector de Sincronizare a Fluidului",
+                "s2-d": "Nutrienții activi se conectează la receptorii celulari în mai puțin de 12 minute, stabilizând glicemia în mod constant.",
+                "s3-t": "Supremație de Bază timp de 8 Ore",
+                "s3-d": "Bucură-te de o putere de procesare curată și constantă a creierului, fără prăbușiri de energie sau vârfuri vasculare bruște.",
+                "matrix-pre": "Metrici de Arhitectură Sistem",
+                "matrix-title": "Cum Rescrie Vortex Standardele Categoriei",
+                "story-pre": "Liniile de Laborator ale Conceptului Vizionar",
+                "story-title": "Creat Pentru Cunoscătorii Care Refuză Mediocritatea",
+                "story-p1": "Am petrecut ani de zile colaborând alături de neurocercetători clinici și dieteticieni sportivi de performanță pentru a proiecta un șablon de fluid consumabil de elită care sfidează regulile convenționale. Vortex Elixir nu oferă doar o energie temporară; reface întregul ecosistem.",
+                "story-p2": "De la sarcini precise de concentrare de dimineață până la etapele de dezvoltare tehnică târziu în noapte, formula noastră oferă o optimizare constantă, astfel încât să poți manifesta o măiestrie operațională maximă.",
+                "t-pre": "Aprobări Verificate",
+                "t-title": "Apreciat de Creatori de Înaltă Performanță la Nivel Global",
+                "faq-pre": "Întrebări de Arhitectură Sistem",
+                "faq-title": "Diagnostice Înregistrate Frecvent",
+                "q1": "Este Vortex Sigur pentru un Consum Zilnic Continuu?",
+                "a1": "Absolut. Formula este construită în întregime pe adaptogeni botanici non-sintetici veridici, proiectați pentru a proteja parametrii biologici homeostazici în siguranță.",
+                "q2": "Cum Funcționează Procesul de Redirecționare către Magazin?",
+                "a2": "Apasarea butonului transferă conexiunea ta securizată către platforma noastră comercială criptată pentru a finaliza protocoalele de achiziție.",
+                "b1": "Prăbușire Energetică și Coloranți Artificiali",
+                "b2": "Bio-Disponibilitate Adaptogenă Naturală",
+                "b3": "Ciclu de Concentrare Curată Susținut",
+                "b4": "Compoziție Validată de Laborator",
+                "banner-h": "Ridică-ți Simțurile Fizice Dincolo de Limitele Standard",
+                "banner-p": "Ești gata să încarci bio-ingineria pură în sistemul tău? Click pe butonul de mai jos pentru a fi direcționat instantaneu către serverul oficial de distribuție și finalizare a achiziției.",
+                "banner-btn": "RUTEAZĂ CĂTRE CENTRUL DE ACHIZIȚIE",
+                "c-pre": "Protocoale Directe de Acces la Comunicare",
+                "c-title": "Conectează-te cu Nucleul Nostru de Logistică",
+                "c-desc": "Ai întrebări legate de rețelele de distribuție corporativă, parametrii de verificare instituțională sau programele de abonament personal? Trimite mesajul tău.",
+                "l-name": "Numele Tău *",
+                "l-mail": "Link Rutare Comunicații (Email) *",
+                "l-msg": "Vector Conținut Mesaj Solicitare *",
+                "btn-submit": "TRANSMITE PACHETUL DE SOLICITARE"
             }
         };
 
-        // Real-Time Dynamic DOM Language Toggle Replacer Execution Core
+        // Live Tabs Swapper Action Module Array Matrices
+        const rawTabsData = {
+            brain: {
+                title: "Alpha Wave Neuro-Adapters",
+                desc: "Enhances neurotransmitter channel pathways, locking the mental state into high-processing operational awareness and memory processing tracks effortlessly.",
+                icon: '<i class="fa-solid fa-brain"></i>',
+                percent: "98.2%",
+                width: "98.2%"
+            },
+            energy: {
+                title: "Intracellular ATP Catalyst",
+                desc: "Accelerates dynamic physical mitochondrial production metrics naturally, granting raw muscular energy support frameworks without vascular tension anomalies.",
+                icon: '<i class="fa-solid fa-bolt-lightning"></i>',
+                percent: "94.6%",
+                width: "94.6%"
+            },
+            stress: {
+                title: "Botanical Adaptogen Synergy",
+                desc: "Infused with botanical extracts that safely neutralize nervous stress indices, protecting internal homeostasis against strain factors completely.",
+                icon: '<i class="fa-solid fa-seedling"></i>',
+                percent: "89.1%",
+                width: "89.1%"
+            }
+        };
+
+        function switchIngredientTab(key) {
+            const data = rawTabsData[key];
+            document.getElementById('ing-title').innerText = data.title;
+            document.getElementById('ing-desc').innerText = data.desc;
+            document.getElementById('ing-icon').innerHTML = data.icon;
+            document.getElementById('ing-percent').innerText = data.percent;
+            document.getElementById('ing-bar').style.width = data.width;
+
+            const buttons = ['brain', 'energy', 'stress'];
+            buttons.forEach(b => {
+                const btn = document.getElementById(`tab-btn-${b}`);
+                if(b === key) {
+                    btn.className = "px-6 py-3 bg-cyan-400 text-slate-950 font-bold rounded-full transition-all cubic-bezier cursor-pointer shadow-lg";
+                } else {
+                    btn.className = "px-6 py-3 bg-slate-900 border border-white/10 text-slate-400 font-bold rounded-full transition-all cubic-bezier cursor-pointer hover:text-white";
+                }
+            });
+        }
+
+        // Language Router Engine Core Handler
         function toggleLanguage(lang) {
             document.querySelectorAll('[data-translate]').forEach(element => {
-                const translationKey = element.getAttribute('data-translate');
-                if (translations[lang] && translations[lang][translationKey]) {
+                const key = element.getAttribute('data-translate');
+                if (lexicon[lang] && lexicon[lang][key]) {
                     if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
-                        element.setAttribute('placeholder', translations[lang][translationKey]);
+                        element.setAttribute('placeholder', lexicon[lang][key]);
                     } else {
-                        element.innerText = translations[lang][translationKey];
+                        element.innerHTML = lexicon[lang][key];
                     }
                 }
             });
 
-            // Update Class Button Toggles Elements Look
-            const activeClass = "bg-cyan-500 text-slate-950".split(" ");
-            const inactiveClass = "text-slate-400 hover:text-white".split(" ");
+            const activeStyle = "bg-cyan-400 text-slate-950".split(" ");
+            const inactiveStyle = "text-slate-400 hover:text-white".split(" ");
 
-            if(lang === 'en') {
-                document.getElementById('lang-btn-en').classList.add(...activeClass);
-                document.getElementById('lang-btn-en').classList.remove(...inactiveClass);
-                document.getElementById('lang-btn-ro').classList.remove(...activeClass);
-                document.getElementById('lang-btn-ro').classList.add(...inactiveClass);
+            if (lang === 'en') {
+                document.getElementById('lang-btn-en').classList.add(...activeStyle);
+                document.getElementById('lang-btn-en').classList.remove(...inactiveStyle);
+                document.getElementById('lang-btn-ro').classList.remove(...activeStyle);
+                document.getElementById('lang-btn-ro').classList.add(...inactiveStyle);
             } else {
-                document.getElementById('lang-btn-ro').classList.add(...activeClass);
-                document.getElementById('lang-btn-ro').classList.remove(...inactiveClass);
-                document.getElementById('lang-btn-en').classList.remove(...activeClass);
-                document.getElementById('lang-btn-en').classList.add(...inactiveClass);
+                document.getElementById('lang-btn-ro').classList.add(...activeStyle);
+                document.getElementById('lang-btn-ro').classList.remove(...inactiveStyle);
+                document.getElementById('lang-btn-en').classList.remove(...activeStyle);
+                document.getElementById('lang-btn-en').classList.add(...inactiveStyle);
             }
         }
 
-        // Handle Client Transmission Form Submissions Arrays
-        document.getElementById('marketing-inquiry-form').addEventListener('submit', function(e) {
+        // Handle Interactive Form Submission
+        document.getElementById('vortex-secure-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert("🚀 System Confirmation: Message transmission data array compiled successfully and simulated!");
+            alert("🚀 Transmission Complete: Secure packet compiled and routed safely!");
             this.reset();
         });
     </script>
