@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VORTEX ELIXIR | Pure Quantum Energy & Focus</title>
     
-    <!-- Premium Frameworks & Luxurious Typography -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -75,6 +74,7 @@
             box-shadow: 0 0 40px rgba(0, 210, 255, 0.3), inset 0 0 30px rgba(255,255,255,0.2);
             overflow: hidden;
             animation: floatBottle 6s ease-in-out infinite;
+            transition: background 0.5s ease;
         }
 
         .bottle-cap {
@@ -94,6 +94,7 @@
             background: linear-gradient(180deg, #00d2ff, #0066ff, #050b1a);
             opacity: 0.85;
             overflow: hidden;
+            transition: background 0.5s ease;
         }
 
         .bottle-liquid::after {
@@ -168,7 +169,14 @@
 </head>
 <body class="text-slate-200 antialiased selection:bg-cyan-400 selection:text-slate-900 relative overflow-x-hidden">
 
-    <!-- IDEA 16: GLOBAL LIVE ALERTS INFOBAR TICKER -->
+    <div id="sticky-cta-bar" class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-slate-950/80 backdrop-blur-2xl border border-cyan-500/30 px-6 py-4 rounded-2xl flex items-center gap-8 shadow-2xl z-55 opacity-0 pointer-events-none transition-all duration-500 max-w-xl w-[90%]">
+        <div class="hidden sm:flex flex-col text-left">
+            <span class="font-luxury text-sm font-black text-white tracking-widest">VORTEX PRO</span>
+            <span class="text-[10px] font-mono text-cyan-400 font-bold" data-translate="sticky-status">DISPATCH PLATFORM ONLINE</span>
+        </div>
+        <a href="https://YOUR-EXTERNAL-STORE-LINK-HERE.com" target="_blank" class="cta-hyper px-6 py-3 text-[10px] font-black uppercase rounded-xl tracking-wider flex-1 text-center" data-translate="sticky-btn">ACQUIRE CURRENT BATCH</a>
+    </div>
+
     <div class="w-full bg-gradient-to-r from-blue-950 via-cyan-950 to-blue-950 border-b border-cyan-500/20 py-2 overflow-hidden sticky top-0 z-55 text-[10px] tracking-widest font-mono text-cyan-400 font-bold">
         <div class="flex whitespace-nowrap ticker-wrap gap-8">
             <span>⚡ SYSTEM UPDATE: BATCH #044 NOW COMPILING FOR GLOBAL DISTRIBUTION DIRECT DESPATCH</span>
@@ -177,43 +185,36 @@
         </div>
     </div>
 
-    <!-- MASTER LIQUID BACKGROUND ANIMATION LAYER -->
     <div class="liquid-bg"></div>
     <div id="bubble-container" class="fixed inset-0 pointer-events-none z-10"></div>
 
-    <!-- DYNAMIC TRANSPARENT BLUR GLASS NAVBAR -->
     <header class="sticky top-[37px] z-50 bg-slate-950/40 backdrop-blur-xl border-b border-white/5 px-8 py-5 flex justify-between items-center">
         <a href="#" class="font-tech text-2xl font-black tracking-[0.25em] text-white flex items-center gap-3">
             <span class="w-3 h-3 bg-cyan-400 rounded-full animate-ping"></span>VORTEX<span class="text-cyan-400 font-light">ELIXIR</span>
         </a>
 
-        <!-- Menu Navigation Bar Links -->
-        <nav class="hidden lg:flex items-center gap-8 text-xs font-bold tracking-widest text-slate-400 font-tech">
+        <nav class="hidden lg:flex items-center gap-6 text-xs font-bold tracking-widest text-slate-400 font-tech">
             <a href="#formula" data-translate="nav-formula" class="hover:text-cyan-400 transition">THE FORMULA</a>
+            <a href="#flavors" data-translate="nav-flavors" class="hover:text-cyan-400 transition">FLAVORS</a>
+            <a href="#tiers" data-translate="nav-tiers" class="hover:text-cyan-400 transition">BUNDLES</a>
             <a href="#workflow" data-translate="nav-steps" class="hover:text-cyan-400 transition">PROTOCOLS</a>
             <a href="#comparisons" data-translate="nav-matrix" class="hover:text-cyan-400 transition">MATRIX</a>
-            <a href="#narrative" data-translate="nav-story" class="hover:text-cyan-400 transition">MANIFESTO</a>
             <a href="#faq" data-translate="nav-faq" class="hover:text-cyan-400 transition">FAQ</a>
             <a href="#inquiry" data-translate="nav-contact" class="hover:text-cyan-400 transition">CHANNELS</a>
         </nav>
 
-        <!-- Right Menu Router Toggle Switch Components -->
         <div class="flex items-center gap-6">
-            <!-- IDEA 4: INSTANT LANGUAGE TOGGLE SWITCH ROUTER -->
             <div class="bg-slate-950/80 border border-white/10 p-1 rounded-full flex items-center font-tech">
                 <button onclick="toggleLanguage('en')" id="lang-btn-en" class="px-3 py-1 text-[10px] font-black rounded-full transition-all duration-300 bg-cyan-400 text-slate-950">EN</button>
                 <button onclick="toggleLanguage('ro')" id="lang-btn-ro" class="px-3 py-1 text-[10px] font-black rounded-full transition-all duration-300 text-slate-400 hover:text-white">RO</button>
             </div>
 
-            <!-- IDEA 14: HIGH CONVERTING REDIRECT BUTTON BRIDGE -->
             <a href="https://YOUR-EXTERNAL-STORE-LINK-HERE.com" target="_blank" data-translate="btn-buy" class="cta-hyper hidden sm:inline-block px-5 py-2.5 text-xs rounded-full font-tech tracking-wider">ORDER NOW</a>
         </div>
     </header>
 
-    <!-- MAIN GRID HIERARCHY -->
     <main class="max-w-7xl mx-auto px-6 py-12 relative z-20 space-y-48">
         
-        <!-- IDEA 3: MASSIVE HERO HERO SECTION WITH DEEP PROMOTION CONTENT SPACE -->
         <section class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center min-h-[85vh] pt-6">
             
             <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
@@ -230,11 +231,15 @@
                     Engineered beyond ordinary energy limits. Vortex Elixir infuses cellular molecular pathways with active cognitive focus adapters and continuous physical hydration layers, unleashing pure, jitter-free neural superiority.
                 </p>
 
-                <!-- IDEA 5: REAL-TIME TICKING BATCH INVENTORY AVAILABILITY FOMO BADGE -->
-                <div data-aos="fade-up" data-aos-delay="250" class="flex items-center justify-center lg:justify-start gap-4 text-xs font-mono">
-                    <div class="px-3 py-1 bg-red-950/30 border border-red-500/30 rounded text-red-400 flex items-center gap-2">
+                <div data-aos="fade-up" data-aos-delay="250" class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 text-xs font-mono">
+                    <div class="px-3 py-1.5 bg-red-950/30 border border-red-500/30 rounded text-red-400 flex items-center gap-2">
                         <span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
                         <span data-translate="fomo-text">ALLOCATION BATCH RUNNING LOW: Only 41 Bottles Remaining</span>
+                    </div>
+
+                    <div class="text-cyan-400 flex items-center gap-2 font-bold tracking-widest bg-cyan-950/20 border border-cyan-500/20 px-3 py-1.5 rounded">
+                        <i class="fa-solid fa-hourglass-half animate-spin"></i>
+                        <span id="countdown-timer">14:59:59</span>
                     </div>
                 </div>
 
@@ -250,23 +255,21 @@
                 </div>
             </div>
 
-            <!-- IDEA 13: IMMERSIVE KINETIC CAPSULE BOTTLE CONTAINER ASSEMBLY -->
             <div class="lg:col-span-5 flex flex-col items-center justify-center relative">
                 <div data-aos="zoom-in-up" data-aos-delay="200" class="relative">
                     <div class="absolute inset-0 bg-cyan-500/20 rounded-full blur-3xl transform scale-75 animate-pulse"></div>
                     
-                    <div class="bottle-container">
+                    <div class="bottle-container" id="main-capsule-bottle">
                         <div class="bottle-cap"></div>
-                        <div class="bottle-liquid"></div>
+                        <div class="bottle-liquid" id="main-capsule-liquid"></div>
                         <div class="absolute inset-x-0 top-1/3 text-center z-10 px-4">
-                            <span class="font-luxury text-3xl font-black text-white tracking-widest block drop-shadow-lg">VORTEX</span>
-                            <span class="font-tech text-[9px] font-bold text-cyan-200 tracking-[0.4em] uppercase block mt-1">QUANTUM FUEL</span>
+                            <span class="font-luxury text-3xl font-black text-white tracking-widest block drop-shadow-lg" id="bottle-brand-title">VORTEX</span>
+                            <span class="font-tech text-[9px] font-bold text-cyan-200 tracking-[0.4em] uppercase block mt-1" id="bottle-brand-flavor">QUANTUM BLUE</span>
                             <div class="w-12 h-[1px] bg-cyan-400 mx-auto mt-4 opacity-60"></div>
                         </div>
                     </div>
                 </div>
 
-                <!-- IDEA 12: ACCOMPANYING CERTIFICATION SPEC BADGE COMPONENT -->
                 <div data-aos="fade-up" data-aos-delay="400" class="mt-8 bg-slate-950/60 border border-white/10 backdrop-blur-md rounded-2xl p-4 flex items-center gap-4 text-left shadow-lg max-w-xs">
                     <div class="w-10 h-10 rounded-full bg-cyan-500/10 flex items-center justify-center text-cyan-400 border border-cyan-500/30">
                         <i class="fa-solid fa-droplet text-xs animate-bounce"></i>
@@ -279,7 +282,6 @@
             </div>
         </section>
 
-        <!-- DATA SUMMARY NUMERICAL ANALYTICS STRIP BANNER -->
         <section class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center border-y border-white/5 py-16 bg-slate-950/10 backdrop-blur-xs">
             <div data-aos="fade-up">
                 <div class="font-luxury text-4xl font-black text-white">0%</div>
@@ -299,7 +301,6 @@
             </div>
         </section>
 
-        <!-- IDEA 1: DYNAMIC INGREDIENT INTERACTIVE DATA SELECTOR TAB FILTER -->
         <section id="formula" class="space-y-12">
             <div class="text-center max-w-2xl mx-auto space-y-4">
                 <h2 data-aos="fade-up" data-translate="formula-pre" class="text-xs font-bold text-cyan-400 tracking-widest uppercase font-tech">Molecular Core Breakdown Matrix Index</h2>
@@ -312,14 +313,12 @@
                 <button onclick="switchIngredientTab('stress')" id="tab-btn-stress" class="px-6 py-3 bg-slate-900 border border-white/10 text-slate-400 font-bold rounded-full transition-all cursor-pointer hover:text-white">Botanical Adaptogen Synergy</button>
             </div>
 
-            <!-- Tab Content Wrapper Pane Component -->
             <div data-aos="zoom-in" id="ingredient-display-panel" class="glass-premium p-8 sm:p-12 rounded-3xl max-w-3xl mx-auto flex flex-col md:flex-row gap-8 items-center">
                 <div class="w-16 h-16 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl" id="ing-icon">
                     <i class="fa-solid fa-brain"></i>
                 </div>
                 <div class="space-y-4 flex-1">
                     <h3 id="ing-title" class="font-luxury font-bold text-2xl text-white">Alpha Wave Neuro-Adapters</h3>
-                    <!-- IDEA 18: DYNAMIC INTERACTIVE LINEAR LAB PROGRESS METRIC MONITOR -->
                     <div class="space-y-1">
                         <div class="flex justify-between font-mono text-[10px] text-slate-400"><span>POTENCY RATING SPEC MATRIX</span><span class="text-cyan-400 font-bold" id="ing-percent">98.2%</span></div>
                         <div class="w-full bg-slate-950 h-1.5 rounded-full overflow-hidden"><div id="ing-bar" class="bg-gradient-to-r from-blue-500 to-cyan-400 h-full rounded-full transition-all duration-1000" style="width: 98.2%;"></div></div>
@@ -331,7 +330,99 @@
             </div>
         </section>
 
-        <!-- IDEA 6: OPTIMAL CHRONOLOGICAL STEP CONSUMPTION PROTOCOLS LINEUP -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div data-aos="fade-up" class="glass-premium p-8 rounded-3xl space-y-4">
+                <div class="text-cyan-400 font-mono text-xs font-bold tracking-widest">🧬 COMPOSITION PROTOCOL A</div>
+                <h4 class="font-luxury text-white text-lg font-bold" data-translate="inc-a-t">Neuro-Hydration Link Vectors</h4>
+                <p class="text-slate-400 text-xs leading-relaxed font-light" data-translate="inc-a-d">Stabilizes cellular membrane communication lines, supporting dynamic mineral equilibrium parameters perfectly.</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="100" class="glass-premium p-8 rounded-3xl space-y-4">
+                <div class="text-blue-400 font-mono text-xs font-bold tracking-widest">🧬 COMPOSITION PROTOCOL B</div>
+                <h4 class="font-luxury text-white text-lg font-bold" data-translate="inc-b-t">Active Co-Enzyme B-Complex Matrix</h4>
+                <p class="text-slate-400 text-xs leading-relaxed font-light" data-translate="inc-b-d">Drives raw natural metabolic cellular conversion metrics, preserving sustained vascular system functionality.</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200" class="glass-premium p-8 rounded-3xl space-y-4">
+                <div class="text-purple-400 font-mono text-xs font-bold tracking-widest">🧬 COMPOSITION PROTOCOL C</div>
+                <h4 class="font-luxury text-white text-lg font-bold" data-translate="inc-c-t">Trace Electrolyte Infusion Array</h4>
+                <p class="text-slate-400 text-xs leading-relaxed font-light" data-translate="inc-c-d">Replenishes vital organic trace mineral values constantly to maintain peak physical homeostatic stamina levels.</p>
+            </div>
+        </section>
+
+        <section id="flavors" class="space-y-12">
+            <div class="text-center max-w-xl mx-auto space-y-2">
+                <h2 data-aos="fade-up" class="text-xs font-bold text-cyan-400 tracking-widest uppercase font-tech" data-translate="flav-pre">Aromatic Fluid Matrix Selection</h2>
+                <p data-aos="fade-up" data-aos-delay="100" class="font-luxury text-2xl sm:text-4xl font-bold text-white" data-translate="flav-title">Select Your Active Flavor Core Adaptation</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div onclick="selectProductFlavor('blue')" id="flavor-card-blue" class="glass-premium p-8 rounded-3xl cursor-pointer border-cyan-400/60 shadow-lg group relative overflow-hidden flex items-center justify-between">
+                    <div class="space-y-2">
+                        <span class="px-2.5 py-1 bg-cyan-950 text-cyan-400 font-mono text-[9px] font-bold tracking-widest uppercase rounded">ORIGINAL LAYER</span>
+                        <h4 class="font-luxury text-white text-xl font-bold mt-2">Quantum Blue Raspberry</h4>
+                        <p class="text-slate-400 text-xs font-light" data-translate="flav-blue-d">Crisp, sharp sub-zero citrus profiles fused with dynamic neural focus boosters.</p>
+                    </div>
+                    <i class="fa-solid fa-circle-check text-cyan-400 text-2xl" id="flavor-check-blue"></i>
+                </div>
+                <div onclick="selectProductFlavor('neon')" id="flavor-card-neon" class="glass-premium p-8 rounded-3xl cursor-pointer opacity-50 hover:opacity-100 transition-all group relative overflow-hidden flex items-center justify-between">
+                    <div class="space-y-2">
+                        <span class="px-2.5 py-1 bg-purple-950 text-purple-400 font-mono text-[9px] font-bold tracking-widest uppercase rounded">EXOTIC VECTOR</span>
+                        <h4 class="font-luxury text-white text-xl font-bold mt-2">Neon Proton Plasma</h4>
+                        <p class="text-slate-400 text-xs font-light" data-translate="flav-neon-d">Tropical adaptogenic botanical notes delivering optimized recovery cycle protection.</p>
+                    </div>
+                    <i class="fa-solid fa-circle-check text-slate-700 text-2xl hidden" id="flavor-check-neon"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="tiers" class="space-y-12">
+            <div class="text-center max-w-xl mx-auto space-y-2">
+                <h2 data-aos="fade-up" class="text-xs font-bold text-slate-500 tracking-widest uppercase font-tech" data-translate="tier-pre">Supply Dispatch Pipelines</h2>
+                <p data-aos="fade-up" data-aos-delay="100" class="font-luxury text-2xl sm:text-4xl font-bold text-white" data-translate="tier-title">Secure Your System Subscription Level</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch font-tech">
+                <div data-aos="fade-up" class="glass-premium p-8 rounded-3xl flex flex-col justify-between space-y-8 relative">
+                    <div class="space-y-4">
+                        <div class="text-slate-400 text-xs tracking-widest uppercase font-bold" data-translate="t1-lbl">Trial Protocol Run</div>
+                        <h4 class="font-luxury font-bold text-2xl text-white">1x VORTEX CAPSULE</h4>
+                        <div class="text-3xl font-black text-cyan-400 font-mono">$39.00</div>
+                        <p class="text-slate-400 text-xs font-light leading-relaxed" data-translate="t1-d">Single delivery allocation to test cognitive sync speed parameters safely.</p>
+                    </div>
+                    <a href="https://YOUR-EXTERNAL-STORE-LINK-HERE.com" target="_blank" class="w-full text-center py-3 bg-white/5 hover:bg-white/10 text-white font-bold tracking-widest uppercase rounded-xl border border-white/10 transition text-[10px]" data-translate="tier-btn">ACQUIRE DISPATCH</a>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="100" class="glass-premium p-8 rounded-3xl flex flex-col justify-between space-y-8 relative border-cyan-400/40 shadow-2xl bg-gradient-to-b from-cyan-950/20 to-transparent">
+                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-cyan-400 text-slate-950 px-3 py-1 font-mono text-[9px] font-black tracking-widest uppercase rounded">RECOMMENDED ALLOCATION</div>
+                    <div class="space-y-4">
+                        <div class="text-cyan-400 text-xs tracking-widest uppercase font-bold" data-translate="t2-lbl">Optimal Ecosystem Cycle</div>
+                        <h4 class="font-luxury font-bold text-2xl text-white">3x VORTEX MATRIX DECK</h4>
+                        <div class="text-3xl font-black text-cyan-400 font-mono">$99.00 <span class="text-xs text-slate-500 font-light line-through font-sans">$117.00</span></div>
+                        <p class="text-slate-400 text-xs font-light leading-relaxed" data-translate="t2-d">Full 24-day system optimization run. Free global secure delivery dispatch protocols applied.</p>
+                    </div>
+                    <a href="https://YOUR-EXTERNAL-STORE-LINK-HERE.com" target="_blank" class="w-full text-center py-4 cta-hyper text-slate-950 font-black tracking-widest uppercase rounded-xl transition text-[10px]" data-translate="tier-btn">ACQUIRE DISPATCH</a>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200" class="glass-premium p-8 rounded-3xl flex flex-col justify-between space-y-8 relative">
+                    <div class="space-y-4">
+                        <div class="text-slate-400 text-xs tracking-widest uppercase font-bold" data-translate="t3-lbl">Elite Institutional Run</div>
+                        <h4 class="font-luxury font-bold text-2xl text-white">6x QUANTUM BULK SYSTEM</h4>
+                        <div class="text-3xl font-black text-cyan-400 font-mono">$179.00</div>
+                        <p class="text-slate-400 text-xs font-light leading-relaxed" data-translate="t3-d">Maximum reserve stockpile setup configured for developer facilities and elite esports teams.</p>
+                    </div>
+                    <a href="https://YOUR-EXTERNAL-STORE-LINK-HERE.com" target="_blank" class="w-full text-center py-3 bg-white/5 hover:bg-white/10 text-white font-bold tracking-widest uppercase rounded-xl border border-white/10 transition text-[10px]" data-translate="tier-btn">ACQUIRE DISPATCH</a>
+                </div>
+            </div>
+        </section>
+
+        <section data-aos="zoom-in" class="glass-premium rounded-[40px] p-1 overflow-hidden relative group max-w-4xl mx-auto border-cyan-500/20">
+            <div class="w-full aspect-video bg-slate-950/80 flex flex-col items-center justify-center relative p-8 text-center min-h-[350px]">
+                <div class="absolute inset-0 bg-radial from-cyan-500/10 to-transparent pointer-events-none"></div>
+                <div class="w-16 h-16 rounded-full bg-cyan-400 text-slate-950 flex items-center justify-center text-xl cursor-pointer shadow-xl hover:scale-110 transition-transform duration-300 z-10">
+                    <i class="fa-solid fa-play ml-1"></i>
+                </div>
+                <h4 class="font-luxury text-white text-xl font-bold mt-6 z-10" data-translate="v-title">Deconstructing Vortex Molecular Labs</h4>
+                <p class="text-slate-500 text-xs max-w-sm mt-2 font-light z-10" data-translate="v-desc">Take a brief 90-second deep-dive journey inside our clean-room sterile synthesis facilities instantly.</p>
+            </div>
+        </section>
+
         <section id="workflow" class="space-y-16">
             <div class="text-center max-w-xl mx-auto space-y-2">
                 <h2 data-aos="fade-up" class="text-xs font-bold text-slate-500 tracking-widest uppercase font-tech" data-translate="flow-pre">Chronological Activation Sequence</h2>
@@ -339,19 +430,16 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
-                <!-- Step Unit Node 1 -->
                 <div data-aos="fade-up" class="space-y-4 relative z-10 text-center md:text-left">
                     <div class="w-12 h-12 rounded-xl bg-slate-950 border border-white/10 flex items-center justify-center font-luxury font-black text-cyan-400 text-lg shadow-inner">I</div>
                     <h4 class="font-luxury text-white font-bold text-lg" data-translate="s1-t">Initialize Intracellular Intake</h4>
                     <p class="text-slate-400 text-xs font-light leading-relaxed" data-translate="s1-d">Consume 150ml of cold concentrated fluid essence early morning directly before high focus tracking execution requirements open up.</p>
                 </div>
-                <!-- Step Unit Node 2 -->
                 <div data-aos="fade-up" data-aos-delay="100" class="space-y-4 relative z-10 text-center md:text-left">
                     <div class="w-12 h-12 rounded-xl bg-slate-950 border border-white/10 flex items-center justify-center font-luxury font-black text-cyan-400 text-lg shadow-inner">II</div>
                     <h4 class="font-luxury text-white font-bold text-lg" data-translate="s2-t">Quantum Fluid Sync Vector</h4>
                     <p class="text-slate-400 text-xs font-light leading-relaxed" data-translate="s2-d">Active nutrients map into tracking cellular receptors inside 12 minutes, stabilizing blood sugar channels smoothly.</p>
                 </div>
-                <!-- Step Unit Node 3 -->
                 <div data-aos="fade-up" data-aos-delay="200" class="space-y-4 relative z-10 text-center md:text-left">
                     <div class="w-12 h-12 rounded-xl bg-slate-950 border border-white/10 flex items-center justify-center font-luxury font-black text-cyan-400 text-lg shadow-inner">III</div>
                     <h4 class="font-luxury text-white font-bold text-lg" data-translate="s3-t">8-Hour Baseline Supremacy</h4>
@@ -360,7 +448,6 @@
             </div>
         </section>
 
-        <!-- IDEA 7: ADVANCED COMPETITIVE BLUEPRINT SPEC COMPARISON MATRIX SYSTEM -->
         <section id="comparisons" class="space-y-12">
             <div class="text-center max-w-xl mx-auto space-y-2">
                 <h2 data-aos="fade-up" class="text-xs font-bold text-cyan-400 tracking-widest uppercase font-tech" data-translate="matrix-pre">Architecture System Metrics</h2>
@@ -397,7 +484,13 @@
             </div>
         </section>
 
-        <!-- IDEA 8: PARALLAX-INSPIRED WIDE MANIFESTO MARKETING LAYOUT SPACE -->
+        <section class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-slate-500 font-mono text-[10px] tracking-widest uppercase bg-slate-950/20 p-6 rounded-2xl border border-white/5">
+            <div class="flex flex-col items-center gap-2"><i class="fa-solid fa-shield-halved text-cyan-500 text-lg"></i><span>LAB CERTIFIED GMP</span></div>
+            <div class="flex flex-col items-center gap-2"><i class="fa-solid fa-leaf text-cyan-500 text-lg"></i><span>100% ORGANIC BASE</span></div>
+            <div class="flex flex-col items-center gap-2"><i class="fa-solid fa-ban-smoke text-cyan-500 text-lg"></i><span>NON-GMO MATRIX</span></div>
+            <div class="flex flex-col items-center gap-2"><i class="fa-solid fa-truck-fast text-cyan-500 text-lg"></i><span>SECURE DISPATCH TRACKING</span></div>
+        </section>
+
         <section id="narrative" class="glass-premium rounded-[40px] p-8 sm:p-16 relative overflow-hidden">
             <div class="absolute top-0 right-0 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
             
@@ -419,7 +512,6 @@
             </div>
         </section>
 
-        <!-- IDEA 10: INFLUENCER SOCIAL TESTIMONIAL DISPLAY CARDS GRID GRID -->
         <section class="space-y-12">
             <div class="text-center max-w-xl mx-auto space-y-2">
                 <h2 data-aos="fade-up" class="text-xs font-bold text-cyan-400 tracking-widest uppercase font-tech" data-translate="t-pre">Verified Endorsements</h2>
@@ -427,13 +519,11 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 font-light text-slate-400 text-xs sm:text-sm">
-                <!-- Testimonial 1 -->
                 <div data-aos="fade-right" class="glass-premium p-8 rounded-3xl space-y-4">
                     <div class="text-amber-400 flex gap-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
                     <p class="italic leading-relaxed">"The cognitive clarity shifts within ten minutes of taking Vortex. My programming velocity stayed entirely flat for seven straight hours without a single spike."</p>
                     <div class="font-tech font-bold text-white uppercase tracking-wider text-[10px]">— Technical Systems Architect, Berlin</div>
                 </div>
-                <!-- Testimonial 2 -->
                 <div data-aos="fade-left" class="glass-premium p-8 rounded-3xl space-y-4">
                     <div class="text-amber-400 flex gap-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
                     <p class="italic leading-relaxed">"Unlike synthetic pre-workouts, Vortex balances cognitive stability with steady cellular hydration layers perfectly. The baseline performance is pure mastery."</p>
@@ -442,7 +532,6 @@
             </div>
         </section>
 
-        <!-- IDEA 9: INTERACTIVE CSS FAQ ACCORDION COLLAPSIBLE ELEMENT ROW -->
         <section id="faq" class="space-y-12 max-w-3xl mx-auto">
             <div class="text-center space-y-2">
                 <h2 data-aos="fade-up" class="text-xs font-bold text-slate-500 tracking-widest uppercase font-tech" data-translate="faq-pre">System Architecture Inquiries</h2>
@@ -450,7 +539,6 @@
             </div>
 
             <div data-aos="fade-up" class="space-y-4 font-tech text-xs sm:text-sm">
-                <!-- Accordion Box 1 -->
                 <details class="glass-premium rounded-2xl group open:border-cyan-400/50 transition-all duration-300">
                     <summary class="p-6 font-bold text-white uppercase tracking-wider flex justify-between items-center cursor-pointer list-none">
                         <span data-translate="q1">Is Vortex Safe for Everyday Continuous Intake Sequence?</span>
@@ -460,7 +548,6 @@
                         Absolutely. The formulation matrix is built completely on lab-verified, non-synthetic botanical adaptogens designed to protect standard biological homeostatic parameters safely every day.
                     </div>
                 </details>
-                <!-- Accordion Box 2 -->
                 <details class="glass-premium rounded-2xl group open:border-cyan-400/50 transition-all duration-300">
                     <summary class="p-6 font-bold text-white uppercase tracking-wider flex justify-between items-center cursor-pointer list-none">
                         <span data-translate="q2">How Does the Store Redirection Process Function?</span>
@@ -470,10 +557,18 @@
                         Clicking any action dispatch triggers securely hands your connection routing token forward to our encrypted merchant sales checkout platform to complete acquisition protocols safely.
                     </div>
                 </details>
+                <details class="glass-premium rounded-2xl group open:border-cyan-400/50 transition-all duration-300">
+                    <summary class="p-6 font-bold text-white uppercase tracking-wider flex justify-between items-center cursor-pointer list-none">
+                        <span data-translate="q3">What are the Standard Distribution Logistics Timelines?</span>
+                        <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-400 font-light leading-relaxed border-t border-white/5 pt-4" data-translate="a3">
+                        Global dispatch nodes clear logistics inside 24 hours. Delivery vectors typically span 3-5 operational calendar intervals safely.
+                    </div>
+                </details>
             </div>
         </section>
 
-        <!-- DYNAMIC FALLBACK CONVERSION ACCELERATION PLATFORM ACTION BANNER -->
         <section data-aos="zoom-in" class="glass-premium rounded-3xl p-8 sm:p-16 text-center relative overflow-hidden bg-radial from-cyan-950/20 to-transparent">
             <div class="max-w-2xl mx-auto space-y-8 relative z-10">
                 <h3 data-translate="banner-h" class="font-luxury text-3xl sm:text-6xl font-black text-white leading-tight">Elevate Your Physical Senses Beyond Standard Limits</h3>
@@ -489,7 +584,6 @@
             </div>
         </section>
 
-        <!-- SYSTEM CONTACT INTAKE FORM REPOSITORY MATRICES -->
         <section id="inquiry" class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
             <div class="lg:col-span-5 space-y-6">
                 <div class="space-y-3">
@@ -500,7 +594,6 @@
                     Have queries regarding bulk corporate distribution pipelines, institutional verification parameters, or personal subscription programs? Send your packet array.
                 </p>
 
-                <!-- IDEA 19: INTEGRATED INLINE NEWSLETTER TRANSMISSION FIELD CARD -->
                 <div data-aos="fade-up" class="glass-premium p-6 rounded-2xl space-y-3 font-tech text-xs">
                     <div class="font-bold text-white uppercase tracking-wider text-[10px]">Matrix Intel Broadcast Feed</div>
                     <div class="flex bg-slate-950 rounded-xl border border-white/5 overflow-hidden p-1">
@@ -524,7 +617,6 @@
                             <input type="text" required placeholder="Alexander Vance" class="w-full bg-slate-950/60 border border-white/10 rounded-xl px-4 py-4 text-white focus:outline-none focus:border-cyan-400 transition placeholder-slate-700">
                         </div>
                         <div class="space-y-2">
-                            <!-- IDEA 17: STRATEGIC EXPLANATORY MICRO-COPY TOOLTIP -->
                             <label data-translate="l-mail" class="block font-bold text-slate-400 uppercase tracking-widest text-[10px]">Digital Comm Routing Link *</label>
                             <input type="email" required placeholder="alex@vance.com" class="w-full bg-slate-950/60 border border-white/10 rounded-xl px-4 py-4 text-white focus:outline-none focus:border-cyan-400 transition placeholder-slate-700">
                         </div>
@@ -534,10 +626,9 @@
                         <textarea rows="4" required placeholder="..." class="w-full bg-slate-950/60 border border-white/10 rounded-xl px-4 py-4 text-white focus:outline-none focus:border-cyan-400 transition placeholder-slate-700 resize-none"></textarea>
                     </div>
 
-                    <!-- IDEA 15: TRUST CONVERTING SECURITY ENCRYPTION INDICATOR HOVER WRAPPER -->
-                    <div class="flex items-center gap-2 font-mono text-[10px] text-slate-500 py-1">
+                    <div class="flex items-center gap-2 font-mono text-[10px] text-slate-500 py-1" id="security-verification-node">
                         <i class="fa-solid fa-lock text-cyan-500/60"></i>
-                        <span>SECURE LAYER PROTOCOL TRANSMISSION ENCRYPTED VIA END-TO-END ARRAY MODES</span>
+                        <span data-translate="secure-msg">SECURE LAYER PROTOCOL TRANSMISSION ENCRYPTED VIA END-TO-END ARRAY MODES</span>
                     </div>
 
                     <button type="submit" data-translate="btn-submit" class="w-full py-4.5 bg-slate-950 hover:bg-slate-900 text-cyan-400 border border-white/10 hover:border-cyan-400/50 font-bold uppercase tracking-widest rounded-xl transition cursor-pointer shadow-lg">
@@ -549,18 +640,16 @@
 
     </main>
 
-    <!-- IDEA 20: ULTRA-CLEAN ENCRYPTED LEGAL SECURITY REPOSITORY FOOTER MARKER -->
     <footer class="border-t border-white/5 bg-slate-950/40 mt-40 py-10 text-center text-[11px] text-slate-600 font-mono tracking-widest">
         <div>&copy; 2026 VORTEX MOLECULAR NUTRITION CORE LABS. TECHNOLOGY PROTECTED BY SYSTEM REGISTRY LAWS.</div>
     </footer>
 
-    <!-- INTERACTION LOGIC & ENGINE ASSEMBLIES -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         // Initialize Animate On Scroll Framework
         AOS.init({ duration: 1000, once: true, offset: 120 });
 
-        // IDEA 2: ADVANCED KINETIC LIQUID PARTICLES RISING EMISSION ENGINE
+        // ADVANCED KINETIC LIQUID PARTICLES RISING EMISSION ENGINE
         const bubbleWrapper = document.getElementById('bubble-container');
         function createLiquidParticle() {
             const bubble = document.createElement('div');
@@ -576,13 +665,68 @@
         }
         setInterval(createLiquidParticle, 220);
 
+        // NEW CORE FEATURE 5: DYNAMIC FLASH-SALE TIMER INTERACTION CALCULATION
+        let countdownDuration = 15 * 60; // 15 Minutes run array
+        const timerNode = document.getElementById('countdown-timer');
+        setInterval(() => {
+            let minutes = Math.floor(countdownDuration / 60);
+            let seconds = countdownDuration % 60;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+            timerNode.innerText = `00:${minutes}:${seconds}`;
+            if (countdownDuration > 0) countdownDuration--;
+        }, 1000);
+
+        // NEW CORE FEATURE 10: PERSISTENT VISIBILITY TRIGGER SENSOR
+        window.addEventListener('scroll', () => {
+            const bar = document.getElementById('sticky-cta-bar');
+            if (window.scrollY > 450) {
+                bar.style.opacity = '1';
+                bar.style.pointerEvents = 'auto';
+            } else {
+                bar.style.opacity = '0';
+                bar.style.pointerEvents = 'none';
+            }
+        });
+
+        // NEW CORE FEATURE 3: INTERACTIVE FLAVOR PALETTE INTERACTIVE SELECTOR ROUTER
+        function selectProductFlavor(flavor) {
+            const blueCard = document.getElementById('flavor-card-blue');
+            const neonCard = document.getElementById('flavor-card-neon');
+            const blueCheck = document.getElementById('flavor-check-blue');
+            const neonCheck = document.getElementById('flavor-check-neon');
+            const mainBottle = document.getElementById('main-capsule-bottle');
+            const mainLiquid = document.getElementById('main-capsule-liquid');
+            const labelFlavor = document.getElementById('bottle-brand-flavor');
+
+            if (flavor === 'blue') {
+                blueCard.className = "glass-premium p-8 rounded-3xl cursor-pointer border-cyan-400/60 shadow-lg group relative overflow-hidden flex items-center justify-between";
+                neonCard.className = "glass-premium p-8 rounded-3xl cursor-pointer opacity-50 hover:opacity-100 transition-all group relative overflow-hidden flex items-center justify-between";
+                blueCheck.classList.remove('hidden');
+                neonCheck.classList.add('hidden');
+                mainBottle.style.background = "linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(0,210,255,0.2) 50%, rgba(0,102,255,0.4) 100%)";
+                mainLiquid.style.background = "linear-gradient(180deg, #00d2ff, #0066ff, #050b1a)";
+                labelFlavor.innerText = "QUANTUM BLUE";
+                labelFlavor.className = "font-tech text-[9px] font-bold text-cyan-200 tracking-[0.4em] uppercase block mt-1";
+            } else {
+                neonCard.className = "glass-premium p-8 rounded-3xl cursor-pointer border-purple-500/60 shadow-lg group relative overflow-hidden flex items-center justify-between";
+                blueCard.className = "glass-premium p-8 rounded-3xl cursor-pointer opacity-50 hover:opacity-100 transition-all group relative overflow-hidden flex items-center justify-between";
+                neonCheck.classList.remove('hidden');
+                blueCheck.classList.add('hidden');
+                mainBottle.style.background = "linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(168,85,247,0.2) 50%, rgba(107,33,168,0.4) 100%)";
+                mainLiquid.style.background = "linear-gradient(180deg, #a855f7, #6b21a8, #050b1a)";
+                labelFlavor.innerText = "PROTON PLASMA";
+                labelFlavor.className = "font-tech text-[9px] font-bold text-purple-300 tracking-[0.4em] uppercase block mt-1";
+            }
+        }
+
         // Advanced Translation Lexicon Map Dictionary Database Arrays Matrix
         const lexicon = {
             en: {
                 "nav-formula": "THE FORMULA",
+                "nav-flavors": "FLAVORS",
+                "nav-tiers": "BUNDLES",
                 "nav-steps": "PROTOCOLS",
                 "nav-matrix": "MATRIX",
-                "nav-story": "MANIFESTO",
                 "nav-faq": "FAQ",
                 "nav-contact": "CHANNELS",
                 "btn-buy": "ORDER NOW",
@@ -598,7 +742,7 @@
                 "flow-pre": "Chronological Activation Sequence",
                 "flow-title": "How To Deploy Maximum Bio-Availability Cycles",
                 "s1-t": "Initialize Intracellular Intake",
-                "s1-d": "Consume 150ml of cold concentrated fluid essence early morning directly before high focus tracking requirements open up.",
+                "s1-d": "Consume 150ml of cold concentrated fluid essence early morning directly before high focus tracking execution requirements open up.",
                 "s2-t": "Quantum Fluid Sync Vector",
                 "s2-d": "Active nutrients map into tracking cellular receptors inside 12 minutes, stabilizing blood sugar channels smoothly.",
                 "s3-t": "8-Hour Baseline Supremacy",
@@ -630,13 +774,40 @@
                 "l-name": "Your Name *",
                 "l-mail": "Digital Comm Routing Link *",
                 "l-msg": "Inquiry Narrative Content Vector *",
-                "btn-submit": "TRANSMIT INQUIRY PACKAGE"
+                "btn-submit": "TRANSMIT INQUIRY PACKAGE",
+                "sticky-status": "DISPATCH PLATFORM ONLINE",
+                "sticky-btn": "ACQUIRE CURRENT BATCH",
+                "inc-a-t": "Neuro-Hydration Link Vectors",
+                "inc-a-d": "Stabilizes cellular membrane communication lines, supporting dynamic mineral equilibrium parameters perfectly.",
+                "inc-b-t": "Active Co-Enzyme B-Complex Matrix",
+                "inc-b-d": "Drives raw natural metabolic cellular conversion metrics, preserving sustained vascular system functionality.",
+                "inc-c-t": "Trace Electrolyte Infusion Array",
+                "inc-c-d": "Replenishes vital organic trace mineral values constantly to maintain peak physical homeostatic stamina levels.",
+                "flav-pre": "Aromatic Fluid Matrix Selection",
+                "flav-title": "Select Your Active Flavor Core Adaptation",
+                "flav-blue-d": "Crisp, sharp sub-zero citrus profiles fused with dynamic neural focus boosters.",
+                "flav-neon-d": "Tropical adaptogenic botanical notes delivering optimized recovery cycle protection.",
+                "tier-pre": "Supply Dispatch Pipelines",
+                "tier-title": "Secure Your System Subscription Level",
+                "t1-lbl": "Trial Protocol Run",
+                "t1-d": "Single delivery allocation to test cognitive sync speed parameters safely.",
+                "t2-lbl": "Optimal Ecosystem Cycle",
+                "t2-d": "Full 24-day system optimization run. Free global secure delivery dispatch protocols applied.",
+                "t3-lbl": "Elite Institutional Run",
+                "t3-d": "Maximum reserve stockpile setup configured for developer facilities and elite esports teams.",
+                "tier-btn": "ACQUIRE DISPATCH",
+                "v-title": "Deconstructing Vortex Molecular Labs",
+                "v-desc": "Take a brief 90-second deep-dive journey inside our clean-room sterile synthesis facilities instantly.",
+                "q3": "What are the Standard Distribution Logistics Timelines?",
+                "a3": "Global dispatch nodes clear logistics inside 24 hours. Delivery vectors typically span 3-5 operational calendar intervals safely.",
+                "secure-msg": "SECURE LAYER PROTOCOL TRANSMISSION ENCRYPTED VIA END-TO-END ARRAY MODES"
             },
             ro: {
                 "nav-formula": "FORMULA",
+                "nav-flavors": "AROME",
+                "nav-tiers": "PACHETE",
                 "nav-steps": "PROTOCOALE",
                 "nav-matrix": "MATRICE",
-                "nav-story": "MANIFEST",
                 "nav-faq": "FAQ",
                 "nav-contact": "CANALE",
                 "btn-buy": "COMANDEAZĂ ACUM",
@@ -664,7 +835,7 @@
                 "story-p1": "Am petrecut ani de zile colaborând alături de neurocercetători clinici și dieteticieni sportivi de performanță pentru a proiecta un șablon de fluid consumabil de elită care sfidează regulile convenționale. Vortex Elixir nu oferă doar o energie temporară; reface întregul ecosistem.",
                 "story-p2": "De la sarcini precise de concentrare de dimineață până la etapele de dezvoltare tehnică târziu în noapte, formula noastră oferă o optimizare constantă, astfel încât să poți manifesta o măiestrie operațională maximă.",
                 "t-pre": "Aprobări Verificate",
-                "t-title": "Apreciat de Creatori de Înaltă Performanță la Nivel Global",
+                "t-title": "Apreciat de Creatori de Înaltă Performance la Nivel Global",
                 "faq-pre": "Întrebări de Arhitectură Sistem",
                 "faq-title": "Diagnostice Înregistrate Frecvent",
                 "q1": "Este Vortex Sigur pentru un Consum Zilnic Continuu?",
@@ -684,11 +855,36 @@
                 "l-name": "Numele Tău *",
                 "l-mail": "Link Rutare Comunicații (Email) *",
                 "l-msg": "Vector Conținut Mesaj Solicitare *",
-                "btn-submit": "TRANSMITE PACHETUL DE SOLICITARE"
+                "btn-submit": "TRANSMITE PACHETUL DE SOLICITARE",
+                "sticky-status": "PLATFORMĂ DE EXPEDIERE ONLINE",
+                "sticky-btn": "ACHIZIȚIONEAZĂ LOTUL CURENT",
+                "inc-a-t": "Vectori de Legătură Neuro-Hidratare",
+                "inc-a-d": "Stabilizează liniile de comunicare ale membranei celulare, susținând perfect parametrii echilibrului mineral dinamic.",
+                "inc-b-t": "Matrice de Complex B Co-Enzimatic Activ",
+                "inc-b-d": "Stimulează metricile naturale de conversie celulară metabolică, păstrând funcționalitatea sistemului vascular.",
+                "inc-c-t": "Grup de Infuzie de Minerale și Electroliți",
+                "inc-c-d": "Reaprovizionează constant valorile minerale esențiale pentru a menține nivelurile de rezistență homeostazică fizică.",
+                "flav-pre": "Selecția Matricii de Fluid Aromatic",
+                "flav-title": "Selectează Nucleul tău de Aromă Activă",
+                "flav-blue-d": "Profiluri de citrice crocante, ascuțite, îmbinate cu amplificatori dinamici de concentrare neurală.",
+                "flav-neon-d": "Note botanice adaptogene tropicale care oferă o protecție optimizată a ciclului de recuperare.",
+                "tier-pre": "Rețele de Distribuție și Aprovizionare",
+                "tier-title": "Asigură-ți Nivelul de Abonament la Sistem",
+                "t1-lbl": "Protocol de Testare Simplu",
+                "t1-d": "O singură alocare de livrare pentru a testa în siguranță parametrii vitezei de sincronizare cognitivă.",
+                "t2-lbl": "Ciclu Optim de Ecosistem",
+                "t2-d": "O optimizare completă a sistemului de 24 de zile. Se aplică protocoale de livrare securizate globale gratuite.",
+                "t3-lbl": "Pachet de Elită Instituțional",
+                "t3-d": "Stoc maxim configurat pentru facilități de dezvoltatori și echipe de elite din esports.",
+                "tier-btn": "ACHIZIȚIONEAZĂ",
+                "v-title": "Deconstrucția Laboratoarelor Moleculare Vortex",
+                "v-desc": "Urmărește o scurtă călătorie de 90 de secunde în interiorul facilităților noastre sterile de sinteză.",
+                "q3": "Care sunt termenele standard de livrare și logistică?",
+                "a3": "Expedierile părăsesc nodurile logistice în 24 de ore. Livrarea durează de obicei între 3 și 5 zile lucrătoare în siguranță.",
+                "secure-msg": "TRANSMISIE SECURIZATĂ ENCRIPTATĂ PRIN PROTOCAL DE STRAT END-TO-END"
             }
         };
 
-        // Live Tabs Swapper Action Module Array Matrices
         const rawTabsData = {
             brain: {
                 title: "Alpha Wave Neuro-Adapters",
@@ -725,14 +921,13 @@
             buttons.forEach(b => {
                 const btn = document.getElementById(`tab-btn-${b}`);
                 if(b === key) {
-                    btn.className = "px-6 py-3 bg-cyan-400 text-slate-950 font-bold rounded-full transition-all cubic-bezier cursor-pointer shadow-lg";
+                    btn.className = "px-6 py-3 bg-cyan-400 text-slate-950 font-bold rounded-full transition-all cursor-pointer shadow-lg";
                 } else {
-                    btn.className = "px-6 py-3 bg-slate-900 border border-white/10 text-slate-400 font-bold rounded-full transition-all cubic-bezier cursor-pointer hover:text-white";
+                    btn.className = "px-6 py-3 bg-slate-900 border border-white/10 text-slate-400 font-bold rounded-full transition-all cursor-pointer hover:text-white";
                 }
             });
         }
 
-        // Language Router Engine Core Handler
         function toggleLanguage(lang) {
             document.querySelectorAll('[data-translate]').forEach(element => {
                 const key = element.getAttribute('data-translate');
@@ -761,7 +956,6 @@
             }
         }
 
-        // Handle Interactive Form Submission
         document.getElementById('vortex-secure-form').addEventListener('submit', function(e) {
             e.preventDefault();
             alert("🚀 Transmission Complete: Secure packet compiled and routed safely!");
